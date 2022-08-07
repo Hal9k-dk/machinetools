@@ -25,7 +25,7 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="4.4064512"
-     inkscape:cx="69.670578"
+     inkscape:cx="69.784048"
      inkscape:cy="94.407037"
      inkscape:window-width="2560"
      inkscape:window-height="1389"
@@ -57,21 +57,6 @@
        cx="25.5"
        cy="17"
        r="2.0999999" />
-    <g
-       id="g172">
-      <circle
-         style="fill:none;stroke:#000000;stroke-width:0.0403976"
-         id="path253"
-         cx="17.5"
-         cy="5.9499998"
-         r="3.0999999" />
-      <circle
-         style="fill:none;stroke:#000000;stroke-width:0.0403976"
-         id="circle255"
-         cx="17.5"
-         cy="44.049999"
-         r="3.0999999" />
-    </g>
     <rect
        style="fill:none;stroke:#000000;stroke-width:0.100323"
        id="rect322"
@@ -80,37 +65,21 @@
        x="0"
        y="-3.5527137e-15"
        ry="2.6693592" />
-    <g
-       id="g178"
-       transform="translate(-10)">
-      <circle
-         style="fill:none;stroke:#000000;stroke-width:0.0403976"
-         id="circle174"
-         cx="17.5"
-         cy="5.9499998"
-         r="3.0999999" />
-      <circle
-         style="fill:none;stroke:#000000;stroke-width:0.0403976"
-         id="circle176"
-         cx="17.5"
-         cy="44.049999"
-         r="3.0999999" />
-    </g>
-    <g
-       id="g184"
-       transform="translate(9.9999999)">
-      <circle
-         style="fill:none;stroke:#000000;stroke-width:0.0403976"
-         id="circle180"
-         cx="17.5"
-         cy="5.9499998"
-         r="3.0999999" />
-      <circle
-         style="fill:none;stroke:#000000;stroke-width:0.0403976"
-         id="circle182"
-         cx="17.5"
-         cy="44.049999"
-         r="3.0999999" />
-    </g>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.167005"
+       id="rect182"
+       width="26.200001"
+       height="6.1999998"
+       x="4.4000001"
+       y="2.8499999"
+       ry="3.0999999" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.167005"
+       id="rect240"
+       width="26.200001"
+       height="6.1999998"
+       x="4.4000001"
+       y="40.950001"
+       ry="3.0999999" />
   </g>
 </svg>
