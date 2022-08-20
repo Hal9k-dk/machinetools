@@ -15,7 +15,7 @@ dia1 = 8;
 dia2 = 6;
 dia3 = 4;
 dia4 = 25.4/8;
-dia5 = 19.7;
+dia5 = 20;
 
 module box(width, height, depth, thickness,
            finger_width, // (default = 2 * thickness)
@@ -64,17 +64,31 @@ module box(width, height, depth, thickness,
     } else {
       difference() {
         cut_top() panel2d(w, d);
+        // 8 mm holes
+        for (i = [1 : 1 : 12])
+           translate([c_c*(i-0.5), c_c*6.5]) circle(d = dia1);
+        for (i = [1 : 1 : 12])
+           translate([c_c*(i-0.5), c_c*5.5]) circle(d = dia1);
+        // 6 mm holes
+        for (i = [1 : 1 : 12])
+           translate([c_c*(i-0.5), c_c*4.5]) circle(d = dia2);
+        for (i = [1 : 1 : 12])
+           translate([c_c*(i-0.5), c_c*3.5]) circle(d = dia2);
+        // 4 mm holes
         for (i = [1 : 1 : 10])
-           translate([c_c*(i-0.5), c_c*2.5]) circle(d = dia1);
+           translate([c_c*(i-0.5), c_c*2.2]) circle(d = dia3);
         for (i = [1 : 1 : 10])
-           translate([c_c*(i-0.5), c_c*1.5]) circle(d = dia2);
-        for (i = [1 : 1 : 5])
-           translate([c_c*(i-0.5), c_c*0.5]) circle(d = dia3);
-        for (i = [1 : 1 : 5])
-           translate([c_c*(i+4.5), c_c*0.5]) circle(d = dia4);
+           translate([c_c*(i-0.5), c_c*1.35]) circle(d = dia3);
+        // 1/8" mm holes
+        for (i = [1 : 1 : 10])
+           translate([c_c*(i-0.5), c_c*0.5]) circle(d = dia4);
+        // collets
         for (i = [0 : 1 : 1])
            for (j = [0 : 1 : 1])
-              translate([c_c*(10.25+i), c_c*(1+j)]) circle(d = 10);//dia5, $fn = 6);
+              if (i == 0 && j == 1)
+                 translate([c_c*(10.25+i), c_c*(1+j)]) circle(d = dia5);
+              else
+                 translate([c_c*(10.25+i), c_c*(1+j)]) circle(d = dia5, $fn = 6);
       }
     }
   }
@@ -424,5 +438,5 @@ module box(width, height, depth, thickness,
     box2d();
 }
 
-box(width = 12*c_c, height = 20, depth = 3*c_c, thickness = 3, open = false,
-    assemble = false, labels = true, explode = 0);
+box(width = 12*c_c, height = 20, depth = 180, thickness = 3, open = false,
+    assemble = true, labels = true, explode = 0);
