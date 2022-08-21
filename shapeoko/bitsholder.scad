@@ -85,10 +85,7 @@ module box(width, height, depth, thickness,
         // collets
         for (i = [0 : 1 : 1])
            for (j = [0 : 1 : 1])
-              if (i == 0 && j == 1)
-                 translate([c_c*(10.25+i), c_c*(1+j)]) circle(d = dia5);
-              else
-                 translate([c_c*(10.25+i), c_c*(1+j)]) circle(d = dia5, $fn = 6);
+              translate([c_c*(10.25+i), c_c*(1+j)]) circle(d = dia5);
       }
     }
   }
@@ -439,4 +436,4 @@ module box(width, height, depth, thickness,
 }
 
 box(width = 12*c_c, height = 20, depth = 180, thickness = 3, open = false,
-    assemble = true, labels = true, explode = 0);
+    assemble = false, labels = true, explode = 0);
