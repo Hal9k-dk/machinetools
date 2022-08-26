@@ -27,85 +27,77 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="0.60886304"
-     inkscape:cx="1186.638"
-     inkscape:cy="52.556976"
-     inkscape:window-width="1920"
-     inkscape:window-height="1029"
+     inkscape:zoom="2.5081542"
+     inkscape:cx="415.6443"
+     inkscape:cy="52.628343"
+     inkscape:window-width="2560"
+     inkscape:window-height="1389"
      inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg6" />
   <title
      id="title2">OpenSCAD Model</title>
-  <g
-     id="g1650"
-     transform="translate(-411.69192)">
-    <g
-       id="g1637"
-       transform="translate(10.583333)">
-      <rect
-         style="fill:none;stroke:#000000;stroke-width:0.165741"
-         id="rect3356"
-         width="39.5"
-         height="12"
-         x="408.51685"
-         y="-219.64151"
-         ry="0" />
-      <rect
-         style="fill:none;stroke:#000000;stroke-width:0.165741"
-         id="rect3358"
-         width="39.5"
-         height="12"
-         x="449.2627"
-         y="-219.64151"
-         ry="0" />
-      <rect
-         style="fill:none;stroke:#000000;stroke-width:0.165741"
-         id="rect3362"
-         width="39.5"
-         height="12"
-         x="490.00861"
-         y="-219.64151"
-         ry="0" />
-      <rect
-         style="fill:none;stroke:#000000;stroke-width:0.165741"
-         id="rect3364"
-         width="39.5"
-         height="12"
-         x="530.75446"
-         y="-219.64151"
-         ry="0" />
-      <rect
-         style="fill:none;stroke:#000000;stroke-width:0.165741"
-         id="rect3366"
-         width="39.5"
-         height="12"
-         x="571.50024"
-         y="-219.64151"
-         ry="0" />
-    </g>
-    <path
-       d="m 454.19192,-229 v -5 h 3.01 v 5 z"
-       id="path721"
-       style="fill:none;stroke:#000000;stroke-opacity:1" />
-    <path
-       d="m 498.19192,-229 v -5 h 3.01 v 5 z"
-       id="path719"
-       style="fill:none;stroke:#000000;stroke-opacity:1" />
-    <path
-       d="m 542.19192,-229 v -5 h 3.01 v 5 z"
-       id="path717"
-       style="fill:none;stroke:#000000;stroke-opacity:1" />
-    <path
-       d="m 586.19192,-229 v -5 h 3.01 v 5 z"
-       id="path715"
-       style="fill:none;stroke:#000000;stroke-opacity:1" />
-    <path
-       d="m 423.69192,-224 h 6.323 v 3 h 6.322 v -3 h 6.323 v 3 h 6.322 v -3 h 6.323 v 3 h 6.322 v -3 h 6.323 v 3 h 6.323 v -3 h 6.322 v 3 h 6.323 v -3 h 6.322 v 3 h 6.323 v -3 h 6.323 v 3 h 6.322 v -3 h 6.323 v 3 h 6.322 v -3 h 6.323 v 3 h 6.322 v -3 h 6.323 v 3 h 6.323 v -3 h 6.322 v 3 h 6.323 v -3 h 6.322 v 3 h 6.323 v -3 h 6.323 v 3 h 6.322 v -3 h 6.323 v 3 h 6.32 v -3 h 6.32 v 3 h 6.33 v -3 h 6.32 v 3 h 9 v -5 h 3 v -5 h -3 v -5 h -214 v 5 h -3 v 5 h 3 v 5 h 9 z"
-       id="path713"
-       style="fill:none;stroke:#000000;stroke-opacity:1" />
-  </g>
+  <rect
+     style="fill:none;stroke:#000000;stroke-width:0.165741"
+     id="rect3356"
+     width="39.5"
+     height="12"
+     x="7.4082556"
+     y="-219.64151"
+     ry="0" />
+  <rect
+     style="fill:none;stroke:#000000;stroke-width:0.165741"
+     id="rect3358"
+     width="39.5"
+     height="12"
+     x="48.154106"
+     y="-219.64151"
+     ry="0" />
+  <rect
+     style="fill:none;stroke:#000000;stroke-width:0.165741"
+     id="rect3362"
+     width="39.5"
+     height="12"
+     x="88.900017"
+     y="-219.64151"
+     ry="0" />
+  <rect
+     style="fill:none;stroke:#000000;stroke-width:0.165741"
+     id="rect3364"
+     width="39.5"
+     height="12"
+     x="129.64586"
+     y="-219.64151"
+     ry="0" />
+  <rect
+     style="fill:none;stroke:#000000;stroke-width:0.165741"
+     id="rect3366"
+     width="39.5"
+     height="12"
+     x="170.39165"
+     y="-219.64151"
+     ry="0" />
+  <path
+     d="m 42.5,-229 v -5 h 3.01 v 5 z"
+     id="path721"
+     style="fill:none;stroke:#000000;stroke-opacity:1" />
+  <path
+     d="m 86.5,-229 v -5 h 3.01 v 5 z"
+     id="path719"
+     style="fill:none;stroke:#000000;stroke-opacity:1" />
+  <path
+     d="m 130.5,-229 v -5 h 3.01 v 5 z"
+     id="path717"
+     style="fill:none;stroke:#000000;stroke-opacity:1" />
+  <path
+     d="m 174.5,-229 v -5 h 3.01 v 5 z"
+     id="path715"
+     style="fill:none;stroke:#000000;stroke-opacity:1" />
+  <path
+     d="m 12,-224 h 6.323 v 3 h 6.322 v -3 h 6.323 v 3 h 6.322 v -3 h 6.323 v 3 h 6.322 v -3 h 6.323 v 3 h 6.323 v -3 h 6.322 v 3 h 6.323 v -3 h 6.322 v 3 h 6.323 v -3 h 6.323 v 3 h 6.322 v -3 h 6.323 v 3 h 6.322 v -3 h 6.323 v 3 h 6.322 v -3 h 6.323 v 3 h 6.323 v -3 h 6.322 v 3 h 6.323 v -3 h 6.322 v 3 h 6.323 v -3 h 6.323 v 3 h 6.322 v -3 h 6.323 v 3 h 6.32 v -3 h 6.32 v 3 h 6.33 v -3 H 208 v 3 h 9 v -5 h 3 v -5 h -3 v -5 H 3 v 5 H 0 v 5 h 3 v 5 h 9 z"
+     id="path713"
+     style="fill:none;stroke:#000000;stroke-opacity:1" />
   <metadata
      id="metadata1083">
     <rdf:RDF>
