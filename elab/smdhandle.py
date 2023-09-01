@@ -1,9 +1,10 @@
 import cadquery as cq
 
 # wedge dimensions
-wd = 1.5
-ww1 = 5
-ww2 = 6
+e = 0.15
+wd = 1.5+e
+ww1 = 5+e
+ww2 = 6+e
 
 # block dimensions
 bd = 5
