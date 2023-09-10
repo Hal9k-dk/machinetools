@@ -4,6 +4,7 @@ w = 25
 gs = 25.4*1.5 # grid spacing
 sd = 4 # depth of screw hole
 th = 19 # thickness
+N = 3 # number of holes
 
 def make_hole(o, x, y):
     return (o
@@ -20,15 +21,12 @@ def make_hole(o, x, y):
 
 res = (cq.Workplane("XY")
        .tag("bot")
-       .box(100, w, th, centered=False)
+       .box((N - 1)*gs + w, w, th, centered=False)
        .edges(">Z or |Z")
        .fillet(2)
       )
 
-res = make_hole(res, 0, 0)
-res = make_hole(res, 0, 1)
-res = make_hole(res, 0, 2)
-res = make_hole(res, 1, 0)
-res = make_hole(res, 2, 0)
+for i in range(0, N):
+    res = make_hole(res, i, 0)
 
 show_object(res)
