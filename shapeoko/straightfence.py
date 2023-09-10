@@ -1,8 +1,14 @@
 import cadquery as cq
 
+SHAPEOKO = False
+WOODMADS = True
+
 w = 25
-gs = 25.4*1.5 # grid spacing
-sd = 4 # depth of screw hole
+if SHAPEOKO:
+    gs = 25.4*1.5  # grid spacing
+elif WOODMADS:
+    gs = 45
+sd = 4 # depth of screw head hole
 th = 19 # thickness
 N = 3 # number of holes
 
