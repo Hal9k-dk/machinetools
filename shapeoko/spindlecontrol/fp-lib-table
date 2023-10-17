@@ -1,0 +1,13 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "Connector_JST")(type "KiCad")(uri "${KIPRJMOD}/footprints/Connector_JST.pretty")(options "")(descr ""))
+  (lib (name "Connector_Phoenix_MSTB")(type "KiCad")(uri "${KIPRJMOD}/footprints/Connector_Phoenix_MSTB.pretty")(options "")(descr ""))
+  (lib (name "Converter_ACDC")(type "KiCad")(uri "${KIPRJMOD}/footprints/Converter_ACDC.pretty")(options "")(descr ""))
+  (lib (name "Diode_THT")(type "KiCad")(uri "${KIPRJMOD}/footprints/Diode_THT.pretty")(options "")(descr ""))
+  (lib (name "OptoDevice")(type "KiCad")(uri "${KIPRJMOD}/footprints/OptoDevice.pretty")(options "")(descr ""))
+  (lib (name "Package_TO_SOT_THT")(type "KiCad")(uri "${KIPRJMOD}/footprints/Package_TO_SOT_THT.pretty")(options "")(descr ""))
+  (lib (name "Resistor_SMD")(type "KiCad")(uri "${KIPRJMOD}/footprints/Resistor_SMD.pretty")(options "")(descr ""))
+  (lib (name "Resistor_THT")(type "KiCad")(uri "${KIPRJMOD}/footprints/Resistor_THT.pretty")(options "")(descr ""))
+  (lib (name "Relay_THT")(type "KiCad")(uri "${KIPRJMOD}/footprints/Relay_THT.pretty")(options "")(descr ""))
+  (lib (name "Package_DIP")(type "KiCad")(uri "${KIPRJMOD}/footprints/Package_DIP.pretty")(options "")(descr ""))
+)
