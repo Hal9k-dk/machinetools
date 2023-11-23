@@ -1,0 +1,68 @@
+A
+
+Modstande
+- 10-180
+- 220-3k9
+- 4k7-82k
+- 100k-1M8
+- 2M2-10M
+Effektmodstande
+Potentiometre
+Store potentiometre
+Trimmepotentiometre
+Kondensatorer keramisk osv.
+Elektrolyt
+SMD-kondensator
+
+Krystaller
+
+B
+
+Transistorer
+Lineær regulator, op amp
+Opto
+LED
+Effekttransistor
+Effektdioder
+Dioder
+Zenerdioder
+Lineære IC
+Digitale IC
+Diverse IC, MOSFETS (!)
+Spoler
+Sikringer
+
+C
+
+Sensorer, lydgivere
+6 mm jack, banan
+RJ jacks, XLR mini
+3.5 mm jack, USB
+Spoler
+Vandtætte stik, pogo pins
+DC-stik, JST XH/PH
+Printspyd, tulipansokler
+Krystaller, batteriholder
+Sikringer
+Skrueterminal PCB
+IDC fladkabelstik
+Fladkabelstik (pcb)
+HF-stik 1
+HF-stik 2
+
+D
+
+Stag, gennemføring
+Kontakter
+M2 skruer
+M2.5, M3 skruer, stag 3 mm
+IC-sokler
+Pinheaders dobbelte
+Metalrør og den slags
+Pinheaders
+Pinsocket crimp
+Glødepærer, knapceller
+Relæer 1
+Relæer 2
+Relæer, tyller
+Lynkineser
