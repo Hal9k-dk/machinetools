@@ -14,55 +14,58 @@ Kondensatorer keramisk osv.
 Elektrolyt
 SMD-kondensator
 
-Krystaller
-
 B
 
-Transistorer
-Lineær regulator, op amp
-Opto
-LED
-Effekttransistor
-Effektdioder
 Dioder
+Effektdioder
 Zenerdioder
+LED
+Opto
+
+Transistorer
+Effekttransistor
+
+Lineær regulator, op amp
 Lineære IC
 Digitale IC
 Diverse IC, MOSFETS (!)
+
 Spoler
 Sikringer
+Krystaller, batteriholder
 
 C
 
-Sensorer, lydgivere
+3.5 mm jack, USB
 6 mm jack, banan
 RJ jacks, XLR mini
-3.5 mm jack, USB
-Spoler
 Vandtætte stik, pogo pins
 DC-stik, JST XH/PH
 Printspyd, tulipansokler
-Krystaller, batteriholder
-Sikringer
 Skrueterminal PCB
 IDC fladkabelstik
 Fladkabelstik (pcb)
 HF-stik 1
 HF-stik 2
+Pinheaders
+Pinsocket crimp
+Pinheaders dobbelte
 
 D
 
-Stag, gennemføring
+Sensorer, lydgivere
+
 Kontakter
-M2 skruer
-M2.5, M3 skruer, stag 3 mm
-IC-sokler
-Pinheaders dobbelte
-Metalrør og den slags
-Pinheaders
-Pinsocket crimp
-Glødepærer, knapceller
 Relæer 1
 Relæer 2
 Relæer, tyller
+
+M2 skruer
+M2.5, M3 skruer, stag 3 mm
+Stag, gennemføring
+
+IC-sokler
+Metalrør og den slags
+Glødepærer, knapceller
+
 Lynkineser
