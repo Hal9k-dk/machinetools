@@ -1,71 +1,78 @@
 A
 
 Modstande
-- 10-180
-- 220-3k9
-- 4k7-82k
-- 100k-1M8
-- 2M2-10M
-Effektmodstande
-Potentiometre
-Store potentiometre
-Trimmepotentiometre
-Kondensatorer keramisk osv.
-Elektrolyt
-SMD-kondensator
+1       - 10-180
+2       - 220-3k9
+3       - 4k7-82k
+4       - 100k-1M8
+5       - 2M2-10M
+6       Effektmodstande
+7
+8       Potentiometre
+9       Store potentiometre
+10      Trimmepotentiometre
+11      Kondensatorer keramisk osv.
+12      Elektrolyt
+13      SMD-kondensator
+14
+15
+16
 
 B
 
-Dioder
-Effektdioder
-Zenerdioder
-LED
-Opto
+1       Dioder
+2       Effektdioder
+3       Zenerdioder
+4       Opto
+5       LED
 
-Transistorer
-Effekttransistor
+6       Transistorer
+7       Effekttransistor
 
-Lineær regulator, op amp
-Lineære IC
-Digitale IC
-Diverse IC, MOSFETS (!)
-
-Spoler
-Sikringer
-Krystaller, batteriholder
+8       Lineær regulator, op amp
+9
+10      Lineære IC
+11      Digitale IC
+12
+13      
+14      Diverse IC, MOSFETS (!)
+13      Krystaller, batteriholder
+15      Sikringer
+16      Spoler
 
 C
 
-3.5 mm jack, USB
-6 mm jack, banan
-RJ jacks, XLR mini
-Vandtætte stik, pogo pins
-DC-stik, JST XH/PH
-Printspyd, tulipansokler
-Skrueterminal PCB
-IDC fladkabelstik
-Fladkabelstik (pcb)
-HF-stik 1
-HF-stik 2
-Pinheaders
-Pinsocket crimp
-Pinheaders dobbelte
+1       3.5 mm jack, USB
+2       6 mm jack, banan
+3       RJ jacks, XLR mini
+
+5       Vandtætte stik, pogo pins
+6       DC-stik, JST XH/PH
+7       Printspyd, tulipansokler
+        
+8       Skrueterminal PCB
+9       HF-stik 1
+10      HF-stik 2
+11      IDC fladkabelstik
+12      Fladkabelstik (pcb)
+13      Pinheaders
+14      Pinsocket crimp
+15      Pinheaders dobbelte
+16
 
 D
 
-Sensorer, lydgivere
+1       Sensorer, lydgivere
+2       Kontakter
+3       Relæer 1
+4       Relæer 2
+5       Relæer, tyller
+6       M2 skruer
+7       M2.5, M3 skruer, stag 3 mm
+8       Nylonskruer
+9       Stag, gennemføring
+10       IC-sokler
+11      Metalrør og den slags
+12      Glødepærer, knapceller
 
-Kontakter
-Relæer 1
-Relæer 2
-Relæer, tyller
-
-M2 skruer
-M2.5, M3 skruer, stag 3 mm
-Stag, gennemføring
-
-IC-sokler
-Metalrør og den slags
-Glødepærer, knapceller
-
-Lynkineser
+16      Lynkineser
