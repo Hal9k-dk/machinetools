@@ -51,7 +51,7 @@ small_y = 6
 rest = arrange(rest, small_x, small_y)
 
 m4s = [
-    6, 8, 10, 16, 20, 25, 30, 35, 60
+    5, 6, 8, 10, 16, 20, 25, 30, 35, 50, 60
 ]
 m4 = [f'M4 x {n}' for n in m4s]
 m4us = [
@@ -76,8 +76,8 @@ m6 = [f'M6 x {n}' for n in m6s]
 medium = gen_nuts(4) + m4 + m4u + gen_nuts(5) + m5 + m5u + [ 'M5 diverse' ] + gen_nuts(6) + m6 + [ 'M6 diverse' ]
 
 medium_x = 4
-medium_y = 12
-print('\n=== 12 x 4 klar medium\n')
+medium_y = 12 + 1
+print('\n=== 12 x 4 + 1 x 4 klar medium\n')
 rest = arrange(medium, medium_x, medium_y)
 if len(rest) > 0:
     print(f'OVERFLOW: {rest}')
@@ -92,7 +92,9 @@ m10s = [
 ]
 m10 = [f'M10 x {n}' for n in m10s]
 
-large = gen_nuts(8) + m8 + gen_nuts(10) + m10
+wingnuts = [ f'M{size} v.møtrik' for size in (4, 6, 8, 10) ]
+
+large = gen_nuts(8) + m8 + gen_nuts(10) + m10 + wingnuts
 
 large_x = 3
 large_y = 8
@@ -102,3 +104,7 @@ rest = arrange(large, large_x, large_y)
 
 
 print('\n\n==============')
+
+# Local Variables:
+# compile-command: "python skuffer.py"
+# End:
