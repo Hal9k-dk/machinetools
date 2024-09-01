@@ -38,7 +38,7 @@ selfthread = ([ 'SS 2 x 6',  'SS 2 x 7', 'SS 2.9 x 6.5', 'SS 2.9 x 13' ] +
               [f'SS  B&O {n+1}' for n in range(5) ])
 pinol = [f'Pinol {n+1}' for n in range(12) ]
 
-small = [ 'M2 skive', 'M2 x 4U' ] + m3all + selfthread + pinol
+small = [ 'M2 skive', 'M2 x 4U' ] + m3all + selfthread + pinol + [ 'M4 diverse' ]
 
 small_x = 5
 small_y = 4
@@ -68,22 +68,37 @@ m5us = [
 ]
 m5u = [f'M5 x {n}U' for n in m5us]
 
-# TODO
-
 m6s = [
-    6, 10, 16, 20, 25, 30, 40
+    10, 14, 20, 25, 30, 40
 ]
 m6 = [f'M6 x {n}' for n in m6s]
-m6us = [
-    10, 16, 25, 40
-]
-m6u = [f'M6 x {n}U' for n in m6us]
 
-medium = gen_nuts(4) + m4 + m4u + gen_nuts(5) + m5 + m5u + gen_nuts(6) + m6 + m6u
+medium = gen_nuts(4) + m4 + m4u + gen_nuts(5) + m5 + m5u + [ 'M5 diverse' ] + gen_nuts(6) + m6 + [ 'M6 diverse' ]
 
 medium_x = 4
 medium_y = 12
-print('\n=== 12 x 4 klar\n')
+print('\n=== 12 x 4 klar medium\n')
 rest = arrange(medium, medium_x, medium_y)
+if len(rest) > 0:
+    print(f'OVERFLOW: {rest}')
+    
+m8s = [
+    14, 16, 20, 30, 40, 50
+]
+m8 = [f'M8 x {n}' for n in m8s]
+
+m10s = [
+    20, 40, 60, 'stang'
+]
+m10 = [f'M10 x {n}' for n in m10s]
+
+large = gen_nuts(8) + m8 + gen_nuts(10) + m10
+
+large_x = 3
+large_y = 8
+print('\n=== 8 x 3 mat stor\n')
+rest = arrange(large, large_x, large_y)
+
+
 
 print('\n\n==============')
