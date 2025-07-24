@@ -1,13 +1,29 @@
+import sys
+
 ITEM_WIDTH = 15
+CSV = True
+
+def emit(s, sep=True):
+    if CSV:
+        print(f'{s}{"," if sep else ""}', end='', file=sys.stderr)
+    else:
+        print(s.ljust(ITEM_WIDTH), end='')
+
+def emit_nl():
+    if CSV:
+        print('', file=sys.stderr)
+    else:
+        print('')
+
 
 def arrange(items, size_x, size_y):
     y = 0
     while len(items) < size_x * size_y:
         items.append('---')
     for idx, item in enumerate(items):
-        print(str(item).ljust(ITEM_WIDTH), end='')
+        emit(str(item))
         if ((idx + 1) % size_x) == 0:
-            print('')
+            emit_nl()
             y = y +1
             if y >= size_y:
                 return items[idx+1:]
@@ -42,16 +58,16 @@ small = [ 'M2 skive', 'M2 x 4U' ] + m3all + selfthread + pinol + [ 'M4 diverse' 
 
 small_x = 5
 small_y = 4
-print('\n=== 4 x 5 klar\n')
+emit('\n=== 4 x 5 klar\n', sep=False)
 rest = arrange(small, small_x, small_y)
-print('\n=== 4 x 5 klar\n')
+emit('\n=== 4 x 5 klar\n', sep=False)
 rest = arrange(rest, small_x, small_y)
-print('\n=== 4 x 6 klar\n')
+emit('\n=== 4 x 6 klar\n', sep=False)
 small_y = 6
 rest = arrange(rest, small_x, small_y)
 
 m4s = [
-    5, 6, 8, 10, 16, 20, 25, 30, 35, 50, 60
+    5, 6, 8, 10, 16, 20, 25, 30, 35, 40, 50, 60
 ]
 m4 = [f'M4 x {n}' for n in m4s]
 m4us = [
@@ -77,7 +93,7 @@ medium = gen_nuts(4) + m4 + m4u + gen_nuts(5) + m5 + m5u + [ 'M5 diverse' ] + ge
 
 medium_x = 4
 medium_y = 12 + 1
-print('\n=== 12 x 4 + 1 x 4 klar medium\n')
+emit('\n=== 12 x 4 + 1 x 4 klar medium\n', sep=False)
 rest = arrange(medium, medium_x, medium_y)
 if len(rest) > 0:
     print(f'OVERFLOW: {rest}')
@@ -98,7 +114,7 @@ large = gen_nuts(8) + m8 + gen_nuts(10) + m10 + wingnuts
 
 large_x = 3
 large_y = 8
-print('\n=== 8 x 3 mat stor\n')
+emit('\n=== 8 x 3 mat stor\n', sep=False)
 rest = arrange(large, large_x, large_y)
 
 
