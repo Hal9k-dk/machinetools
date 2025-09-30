@@ -32,3 +32,47 @@ $122=400.000
 $130=845.000
 $131=850.000
 $132=100.000
+
+The following G-codes are supported on the Nomad and Shapeoko using Carbide Motion:
+
+    G0 — Rapid positioning
+    G1 — Linear movement at specified Feed rate (F)
+    G2, G3 — Movement in an arc at specified Feed rate (F)
+
+    G4 — Dwell
+
+    G17, G18, G19 — Select a plane for arcs
+
+    G20 — Select Imperial units
+
+    G21 — Select metric units
+
+    G28 — Go to Pre-Defined Position
+
+    G28.2 — Run homing cycle
+
+    G40, G43, G49 (Accepted but ignored)
+
+    G54–G59 (Accepted but ignored) — May be entered using MDI. Note that Carbide Motion uses work coordinate systems internally and care must be taken when interacting with them not to overwrite its settings.
+
+    G90 — Absolute distance mode
+
+    G91 — Relative distance mode
+
+    G91.1 — Arc radius mode
+
+    M0 — Program Pause and End — in Carbide Motion this will allow one to run a program again.
+
+    M1 — Sleep (optional stop)
+
+    M2 — Program Pause and End (see below)
+
+    M30 — Program Pause and End — in Carbide Motion this may return the machine to the machine origin
+
+    M6 — Tool change — this is implemented in Carbide Motion to facilitate the Nomad tool length sensor for changing tools
+
+    M3 — Spindle direction clockwise (starts the spindle)
+
+    M5 — Stop spindle rotation
+
+    M7, M9 (Accepted but ignored)
