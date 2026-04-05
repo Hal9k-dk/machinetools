@@ -41,34 +41,38 @@
     <path
        id="rect1"
        style="fill:none;stroke:#000000;stroke-width:0.308235"
-       d="M 0 0 L 0 30.000236 L 11.999784 30.000236 L 11.999784 75.000073 L 0 75.000073 L 0 104.99979 L 171.99984 104.99979 L 171.99984 75.000073 L 160.00005 75.000073 L 160.00005 30.000236 L 171.99984 30.000236 L 171.99984 0 L 0 0 z " />
+       d="M 171.99984,104.99979 V 74.999554 H 160.00006 V 29.999717 h 11.99978 V 0 H 0 V 29.999717 H 11.99979 V 74.999554 H 0 v 30.000236 z" />
     <circle
        style="fill:none;stroke:#000000;stroke-width:0.0515269"
        id="path1"
-       cx="4.5999999"
-       cy="9.1000004"
-       r="1.6" />
+       cx="-167.39984"
+       cy="-95.899788"
+       r="1.6"
+       transform="scale(-1)" />
     <circle
        style="fill:none;stroke:#000000;stroke-width:0.0515269"
        id="circle1"
-       cx="165.60001"
-       cy="9.1000004"
-       r="1.6" />
+       cx="-6.3998337"
+       cy="-95.899788"
+       r="1.6"
+       transform="scale(-1)" />
     <circle
        style="fill:none;stroke:#000000;stroke-width:0.0515269"
        id="circle2"
-       cx="4.5999999"
-       cy="98.599998"
-       r="1.6" />
+       cx="-167.39984"
+       cy="-6.3997917"
+       r="1.6"
+       transform="scale(-1)" />
     <circle
        style="fill:none;stroke:#000000;stroke-width:0.0515269"
        id="circle4"
-       cx="165.60001"
-       cy="98.599998"
-       r="1.6" />
+       cx="-6.3998337"
+       cy="-6.3997917"
+       r="1.6"
+       transform="scale(-1)" />
     <g
        id="g11"
-       transform="rotate(90,65.825001,61.424999)">
+       transform="rotate(-90,81.450001,33.450001)">
       <circle
          style="fill:none;stroke:#000000;stroke-width:0.0664533"
          id="circle3"
@@ -93,6 +97,24 @@
          cx="35.650002"
          cy="55.25"
          r="1.25" />
+    </g>
+    <g
+       id="g2"
+       transform="rotate(180,77.798662,44.6)">
+      <ellipse
+         style="fill:none;fill-opacity:0.246227;stroke:#000000;stroke-width:0.499999;stroke-linejoin:round"
+         id="path2"
+         cx="1.5999999"
+         cy="1.6"
+         rx="1.5999999"
+         ry="1.6" />
+      <ellipse
+         style="fill:none;fill-opacity:0.246227;stroke:#000000;stroke-width:0.499999;stroke-linejoin:round"
+         id="ellipse2"
+         cx="42.240002"
+         cy="1.6"
+         rx="1.5999999"
+         ry="1.6" />
     </g>
   </g>
 </svg>
