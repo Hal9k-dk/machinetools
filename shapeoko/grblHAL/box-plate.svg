@@ -41,38 +41,43 @@
     <path
        id="rect1"
        style="fill:none;stroke:#000000;stroke-width:0.308235"
-       d="M 171.99984,104.99979 V 74.999554 H 160.00006 V 29.999717 h 11.99978 V 0 H 0 V 29.999717 H 11.99979 V 74.999554 H 0 v 30.000236 z" />
-    <circle
-       style="fill:none;stroke:#000000;stroke-width:0.0515269"
-       id="path1"
-       cx="-167.39984"
-       cy="-95.899788"
-       r="1.6"
-       transform="scale(-1)" />
-    <circle
-       style="fill:none;stroke:#000000;stroke-width:0.0515269"
-       id="circle1"
-       cx="-6.3998337"
-       cy="-95.899788"
-       r="1.6"
-       transform="scale(-1)" />
-    <circle
-       style="fill:none;stroke:#000000;stroke-width:0.0515269"
-       id="circle2"
-       cx="-167.39984"
-       cy="-6.3997917"
-       r="1.6"
-       transform="scale(-1)" />
-    <circle
-       style="fill:none;stroke:#000000;stroke-width:0.0515269"
-       id="circle4"
-       cx="-6.3998337"
-       cy="-6.3997917"
-       r="1.6"
-       transform="scale(-1)" />
+       d="M 0,3 V 30.000236 H 11.99978 V 75.000073 H 0 V 102 H 171.99984 V 75.000073 H 160.00005 V 30.000236 h 11.99979 V 3 Z"
+       sodipodi:nodetypes="ccccccccccccc" />
+    <g
+       id="g1"
+       transform="rotate(180,85.99992,52.499895)">
+      <circle
+         style="fill:none;stroke:#000000;stroke-width:0.0515269"
+         id="path1"
+         cx="-167.39984"
+         cy="-95.899788"
+         r="1.6"
+         transform="scale(-1)" />
+      <circle
+         style="fill:none;stroke:#000000;stroke-width:0.0515269"
+         id="circle1"
+         cx="-6.3998337"
+         cy="-95.899788"
+         r="1.6"
+         transform="scale(-1)" />
+      <circle
+         style="fill:none;stroke:#000000;stroke-width:0.0515269"
+         id="circle2"
+         cx="-167.39984"
+         cy="-6.3997917"
+         r="1.6"
+         transform="scale(-1)" />
+      <circle
+         style="fill:none;stroke:#000000;stroke-width:0.0515269"
+         id="circle4"
+         cx="-6.3998337"
+         cy="-6.3997917"
+         r="1.6"
+         transform="scale(-1)" />
+    </g>
     <g
        id="g11"
-       transform="rotate(-90,81.450001,33.450001)">
+       transform="rotate(90,68.699921,55.299919)">
       <circle
          style="fill:none;stroke:#000000;stroke-width:0.0664533"
          id="circle3"
@@ -100,7 +105,7 @@
     </g>
     <g
        id="g2"
-       transform="rotate(180,77.798662,44.6)">
+       transform="rotate(-90,98.042359,-45.92721)">
       <ellipse
          style="fill:none;fill-opacity:0.246227;stroke:#000000;stroke-width:0.499999;stroke-linejoin:round"
          id="path2"
