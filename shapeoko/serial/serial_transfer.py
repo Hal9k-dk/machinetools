@@ -6,9 +6,11 @@ Opens two serial ports and transfers data between them character by character.
 Data received on port 1 is sent to port 2, and vice versa.
 """
 
+import logging
 import serial
 import sys
 import threading
+from datetime import datetime
 from typing import Optional
 
 
@@ -38,6 +40,25 @@ class SerialPortTransfer:
         self.port1: Optional[serial.Serial] = None
         self.port2: Optional[serial.Serial] = None
         self.running = False
+        self._setup_logging()
+
+    def _setup_logging(self) -> None:
+        """Set up logging for data transfers."""
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        self.log_file_1_to_2 = f"transfer_1_to_2_{timestamp}.log"
+        self.log_file_2_to_1 = f"transfer_2_to_1_{timestamp}.log"
+
+        self.logger_1_to_2 = logging.getLogger("transfer_1_to_2")
+        self.logger_2_to_1 = logging.getLogger("transfer_2_to_1")
+
+        for logger, log_file in [
+            (self.logger_1_to_2, self.log_file_1_to_2),
+            (self.logger_2_to_1, self.log_file_2_to_1),
+        ]:
+            logger.setLevel(logging.INFO)
+            handler = logging.FileHandler(log_file)
+            logger.addHandler(handler)
+
 
     def open_ports(self) -> bool:
         """
@@ -87,9 +108,13 @@ class SerialPortTransfer:
                     char = self.port1.read(1)
                     if char:
                         self.port2.write(char)
-                        print(f"Port 1 → Port 2: {char!r}")
+                        #log_msg = f"Port 1 → Port 2: {char!r}"
+                        #print(log_msg)
+                        self.logger_1_to_2.info(char)
             except serial.SerialException as e:
-                print(f"Error reading from port 1: {e}")
+                error_msg = f"Error reading from port 1: {e}"
+                print(error_msg)
+                self.logger_1_to_2.error(error_msg)
                 self.running = False
                 break
 
@@ -101,9 +126,13 @@ class SerialPortTransfer:
                     char = self.port2.read(1)
                     if char:
                         self.port1.write(char)
-                        print(f"Port 2 → Port 1: {char!r}")
+                        #log_msg = f"Port 2 → Port 1: {char!r}"
+                        #print(log_msg)
+                        self.logger_2_to_1.info(char)
             except serial.SerialException as e:
-                print(f"Error reading from port 2: {e}")
+                error_msg = f"Error reading from port 2: {e}"
+                print(error_msg)
+                self.logger_2_to_1.error(error_msg)
                 self.running = False
                 break
 
