@@ -40,19 +40,10 @@ with BuildPart() as p:
         with Locations((0, -8)):
             with GridLocations(5.25, 1, 4, 1):
                 RectangleRounded(limit_w, limit_h, .99)
+        with Locations((5.25*1.5, -8)):
+            Circle(2)
     extrude(amount=total_th, mode=Mode.SUBTRACT)
-    # rods
-    with BuildSketch(Plane.XZ.offset(-h/2)):
-        with Locations((0, total_th/2)):
-            with GridLocations(w-7.5, 1, 2, 1):
-                Circle(radius=rod_d1/2)
-    extrude(amount=h-5, mode=Mode.SUBTRACT)
-    with BuildSketch(Plane.XZ.offset(h/2)):
-        with Locations((0, total_th/2)):
-            with GridLocations(w-7.5, 1, 2, 1):
-                Circle(radius=rod_d2/2)
-    extrude(amount=-5, mode=Mode.SUBTRACT)
-    
+   
     
     split(bisect_by=Plane.XZ.offset(-(h/2+flange_w)+8.25), keep=Keep.BOTH)
     split(bisect_by=Plane.XZ.offset(-(h/2+flange_w)+8.25+7.5), keep=Keep.BOTH)
