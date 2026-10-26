@@ -1,0 +1,290 @@
+10  Machine Coord
+11  SpindleOn
+12  MistOn
+13  FloodOn
+14  Jog Cont.
+15  Jog Incr.
+16  WorkOffsets Display.
+17  Feed OverRide
+18  Simulation On 
+19  Emergency Input Active
+20  A axis Diam. Comp.
+21  B Axis Diam  Comp.
+22  C Axis Diam  Comp.
+23  Softlimits on.
+24  THC On
+25  Spindle Accelerating
+26  Spindle Decelerating
+27  ToolPath On
+28  Tool Offset in effect
+29  Work Offset in effect
+30  Throttle used for Override
+31  Throttle used for Jog speed
+32  BackLash on.
+33  AutoLimits override in effect
+34  Limits switches disenganged
+35  Input#4 single step engaged
+36  Torch OK active
+37  Torch Up Active
+38  Torch Down Active 
+39  Units/Rev Mode 
+40  Units/Min Mode
+41  X Scaling Active
+42  Y Scaling Active
+43  Z Scaling Active
+44  A Scaling Active
+45  B Scaling Active
+46  C Scaling Active
+47  Jog Follow Active
+48  Absolute Coord mode.
+49  Incremental Coord Mode
+50  Threading Sync Active
+51  LaserTriggering  Active
+52  Z Inhibit Active
+53  Ignoring Tool Change M6
+54  Continuous Velocity Mode.
+55  Repeat runs holding
+56  Exact Stop Mode.
+57  MPG Jog Mode
+58  Continuous Jog Mode
+59  X Axis MPG mode
+60  Y Axis MPG mode
+61  Z Axis MPOG mode
+62  A Axis MPG Mode
+63  B Axis MPG Mode
+64  C Axis MPG Mode
+65  Optional Stop M1 enabled
+66  Block Delete mode enabled 
+67  Offline Active 
+68  Actual Spindle speed in Use. 
+69  Waiting for thread trigger point 
+70  Plunging Disabled
+71  Spindle Speed Stable
+72  IJ Mode Abs
+73  IJ Mode Incremental
+74  TeachFile is open
+75  G92 in effect
+77  OUTPUT4 Active
+78  OUTPUT5 Active
+79  Output6 Active
+80  Engine in Pause state
+81  Tangental control in effect
+82  Single Step mode active
+83  Jog Enabled
+84  CV Feedrate descriminator enabled
+85  Enhance pulseing Off
+86  X Axis Enabled
+87  Y Axis Enabled
+88  Z Axis Enabled
+89  A Axis Enabled
+90  B Axis Enabled
+91  C Axis Enabled
+92  Diameter Mode enabled
+93  MultiSlot Spindle Input enabled
+94  HotKeys Enabled
+95  Units/Minute mode
+96  Units/Rev Mode
+97  Running in Reverse
+98  X MPG enabled MPG #2
+99  Y MPG Enabled MPG #2
+100 Z MPG enabled MPG #2
+101 A MPG Enabled MPG #2
+102 B MPG enabled MPG #2
+103 C MPG Enabled MPG #2
+104 Dual MPG Taper Mode enabled
+105 Dual MPG Jog Mode enabled
+106 MPG Velocity Mode
+107 G96 mode in effect
+108 Coordinate system Rotated
+109 Rapid Speed OverRide
+110 Formula corrections on. 
+111 Partial move holding
+112 Running in Reverse
+113 Feedrate Bypass Enabled
+114 Front toolpost active
+115 Rear Toolpost active 
+116 Spindle running in CCW
+117 MPG Velocity mode selected) 
+118 MPG Vel/Step mode enabled
+119 MPG Single Step enabled
+120 MPG Multistep enabled
+121 External XJog++ active
+122 External XJog-- Active 
+123 External YJog++ active
+124 External YJog-- Active 
+125 External ZJog++ active
+126 External ZJog-- Active 
+127 External AJog++ active
+128 External AJog-- Active 	           
+129 Toolpath Zoom locked on
+130 Toolpath PanState locked on
+131 MPG #3 X axis Active
+132 MPG #3 Y axis Active
+133 MPG #3 X axis Active
+134 MPG #3 Y axis Active
+135 MPG #3 X axis Active
+136 MPG #3 Y axis Active
+137 Printer port bit 0
+138 Printer port bit 1
+139 Printer port bit 2
+140 Printer port bit 3
+141 Printer port bit 4
+142 Printer port bit 5
+143 Printer port bit 6
+144 Printer port bit 7
+145 Printer port bit 8
+146 Printer port bit 9
+147 Printer port bit 10
+148 Printer port bit 11
+149 Printer port bit 12
+150 Printer port bit 13
+151 Printer port bit 14
+152 Printer port bit 15
+153 Printer port bit 16
+154 Printer port bit 17
+155 Printer port bit 18
+156 Printer port bit 19
+157 Printer port bit 20
+158 Printer port bit 21
+159 Printer port bit 22
+160 Printer port bit 23
+161 Printer port bit 24
+162 Macro In progress
+999 Machine Is Moving
+500 GRex Heartbeat
+501 GRex Still
+502 GRex Ended Queue
+503 GRex Mavg queue drained
+504 Grex Paused
+505 GRex Purging
+506 GRex Halted
+507 GRex Global Rate Reg, OK
+508 GRex X Axis Homed
+509 GRex Y Axis Homed
+510 GRex Z Axis Homed
+511 GRex A Axis Homed
+512 GRex B Axis Homed
+513 GRex C Axis Homed 
+514 GRex halt monitor pin 1
+515 GRex halt monitor pin 2
+516 GRex halt monitor pin 3
+517 GRex halt monitor pin 4
+518 GRex halt monitor pin 5
+519 GRex halt monitor pin 6
+520 GRex halt monitor pin 7
+521 GRex halt monitor pin 8
+522 GRex halt monitor pin 9
+523 GRex halt monitor pin 10
+524 GRex halt monitor pin 11
+525 GRex halt monitor pin 12
+526 GRex halt monitor pin 13
+527 GRex halt monitor pin 14
+528 GRex halt monitor pin 15
+529 GRex halt monitor pin 16
+530 GRex Queue Full
+531 GRex Sequence Error
+532 GRex Packet Loss Diag Mode
+533 GRex Pin 1 Active
+534 GRex Pin 2 Active
+535 GRex Pin 3 Active
+536 GRex Pin 4 Active
+537 GRex Pin 5 Active
+538 GRex Pin 6 Active
+539 GRex Pin 7 Active
+540 GRex Pin 8 Active
+541 GRex Pin 9 Active
+542 GRex Pin 10 Active
+543 GRex Pin 11 Active
+544 GRex Pin 12 Active
+545 GRex Pin 13 Active
+546 GRex Pin 14 Active
+547 GRex Pin 15 Active
+548 GRex Pin 16 Active
+549 GRex Pin 17 Active
+550 GRex Pin 18 Active
+551 GRex Pin 19 Active
+552 GRex Pin 20 Active
+553 GRex Pin 21 Active
+554 GRex Pin 22 Active
+555 GRex halt monitor pin 17
+556 GRex halt monitor pin 18
+557 GRex halt monitor pin 19
+558 GRex halt monitor pin 20
+559 GRex halt monitor pin 21
+560 GRex halt monitor pin 22
+561 GRex Pin 1 Out Active
+562 GRex Pin 2 Out Active
+563 GRex Pin 3 Out Active
+564 GRex Pin 4 Out Active
+565 GRex Pin 5 Out Active
+566 GRex Pin 6 Out Active
+567 GRex Pin 7 Out Active
+568 GRex Pin 8 Out Active
+569 GRex Pin 9 Out Active
+570 GRex Pin 10 Out Active
+571 GRex Pin 11 Out Active
+572 GRex Pin 12 Out Active
+573 GRex Pin 13 Out Active
+574 GRex Pin 14 Out Active
+575 GRex Pin 15 Out Active
+576 GRex Pin 16 Out Active
+800 EStop Conditon Active;
+801 MM Mode active
+802 Inch Mode Active
+803 program not in Stop Condition
+804 Program Running
+805 Planner Paused
+806 ToolChange Wait
+807 X Homed
+808 Y Homed
+809 Z Homed
+810 A Homed
+811 B Homed
+812 C Homed
+813 Dwell in effect    
+814 Joystick On
+815 Softlimits On
+816 Machine Coorindates On
+817 Exact Stop Condition
+818 Work Offsets in Effect
+819 Incremental Jog
+820 Continous Jog
+821 OUTPUT1 Active
+822 OUTPUT2 Active
+823 OUTPUT3 Active
+824 OUTPUT4 Active
+825 Probe Input Active
+826 Index Input Active
+827 LimitOverRide Input Active
+828 X++ Limit Active
+829 X-- Limit Active
+830 X Home Active
+831 Y++ Limit Active
+832 Y-- Limit Active
+833 Y Home Active
+834 Z++ Limit Active
+835 Z-- Limit Active
+836 Z Home Active
+837 A++ Limit Active
+838 A-- Limit Active
+839 A Home Active
+840 B++ Limit Active
+841 B-- Limit Active
+842 B Home Active
+843 C++ Limit Active
+844 C-- Limit Active
+845 C Home Active
+846 Enable1 Active
+847 Enable2 Active
+848 Enable3 Active
+849 Enable4 Active
+850 Enable5 Active
+851 Enable6 Active
+852 OUTPUT1 Active
+853 OUTPUT2 Active
+854 OUTPUT3 Active
+855 DigTrigger output Active
+
+
+ 
+ 

@@ -1,0 +1,243 @@
+1   Jog % Incr
+2   Pulse Freq
+3   JogPercent 
+4   X Minimum
+5   Y Min.
+6   Z Min
+7   A Min
+8   B Min
+9   C Min
+10   X Max
+11   Y MAx
+12   Z MAx
+13   A MAx
+14   B Max
+15   C Max
+16   G92 X
+17   G92 Y
+18   G92 Z
+19   G92 A
+20   G92 B
+21   G92 C
+22   Planner QueueDepth
+23   TimeScale
+24   PWMBaseFrequency
+25   THCSpeed
+26   THCCurrent Correction.
+27   THC Max Correction
+28   CPULoad
+29   Encoder Position 1
+30   Encoder Position 2
+31   Encoder Position 3
+32   Tool Length Offset
+33   Ref Point X
+34   Ref Point Y
+35   Ref Point Z
+36   Ref Point A
+37   Ref Point B
+38   Ref Point C
+39   True Spindle RPM
+40   Diagnostic DRO 
+41   Tool XOffset
+42   Tool ZOffset 
+43   Tool Diam
+44   Tool Radius
+45   LatheCorrection Obsolete
+46   Work Offset Mode
+47   Work Offset X 
+48   Work Offset y 
+49   Work Offset z
+50   work offset a 
+51   work offset b
+52   work offset c
+53   cpuSpeed
+54   SafeZ
+55   FeedRate 
+56   Spindle CurrentPulley  
+57   Spindle MaxSpeed
+58   BlendVel
+59   xscale 
+60   yscale 
+61   zscale 
+62   ascale 
+63   bscale 
+64   cscale 
+65   THC Min Correction
+66   Thread EntranceAngle
+67   Ints per Rotation (Diag)
+68   RotError (Diag)
+69   nTrigger (Diag)
+70   Thread SpinCorrection (Diag)
+71   IntsPerRotation (Diag)
+72   MaxSpinCounts (Diag)
+73   SpinAdder (Threading Diag)
+74   Spindle Speed Inc
+75   Turn Cylinder size 
+76   LaserXGrid 
+77   LaserYGrid 
+78   Program Repeats
+79   Z Inhibit Inc
+80   Z Inhibit Depth
+81   BitTest (Diag )
+82   Plunge Speed Percent
+83   Machine X Position
+84   Machine Y Position
+85   Machine Z Position
+86   Machine A Position
+87   Machine B Position
+88   Machine C Position
+89   CV  BlendFactor
+90   Spindle sensor # Slots
+91   G73 Pull Off amount
+92   Tangental Lift Angle
+93   Tangental Lift Level
+97   CV FeedRate trigger level
+98   Feedrate Inc
+99   Spindle speed ratio
+100  Encoder Position 3
+101  MPG Count 1      
+102  MPG.Count 2
+103  MPG Count 3
+104  RapidFeedrate  
+105  Tool Diam
+106   Tool Tip direction
+107   Tool Radius		
+108   Tool XOffset
+109   Tool ZOffset
+110   Tool XWear
+111   Tool ZWear
+112   Tool turretang
+113   MPG Velocity 1
+114   MPG Velocity 2
+115   MPG Velocity 3
+116   Taper Ratio
+117   Spindle CSS/min
+118   Coordinate Rotation
+119   Laser A Grid 
+120   IncJog Buffer 
+121   Spindle MinSpeed
+122   Bypass FeedRate 
+123   ToolPostOffset
+124   MPG Velocity % 1
+125   MPG velocity % 2
+126   MPG FeedRate
+127   Encoder Lag #1
+128   Encoder Lag #2
+129   Encoder Lag #3
+130   EndClocks (Diag)		
+131   SLS Laser Dist
+132   Probe Z TripCount
+133   Engine LookAhead
+134   X Pulses Total
+135   Y Pulses Total
+136   Z Pulses Total
+137   A Pulses Total
+138   B Pulses Total
+139   C Pulses Total
+140   Encoder 0 Raw
+141   Encoder 1 Raw
+142   Encoder 2 Raw
+143   Encoder 3 Raw
+144   Encoder 4 Raw
+145   Encoder 5 Raw
+146   Analogue 1 In
+147   Analogue 2 In
+148   Analogue 3 In
+149   Analogue 4 In
+150   SoftLimit X MAx (count)
+151   SoftLimit Y MAx (count)
+152   SoftLimit Z MAx (count)
+153   SoftLimit A MAx (count)
+154   SoftLimit B MAx (count)
+155   SoftLimit C MAx (count)
+156   SoftLimit X Min (count)
+157   SoftLimit Y Min (count)
+158   SoftLimit Z Min (count)
+159   SoftLimit A Min (count)
+160   SoftLimit B Min (count)
+161   SoftLimit C Min (count)
+162   Turret Offset
+164   Current Interp. X 
+165   Current Interp  Y
+166   Current Planner X
+167   Current Planner Y
+168   TorchSpeed
+169   Orig SpindleSpeed
+170   Encoder 0 position (Corrected)		
+171   Encoder 1 position (Corrected)	
+172   Encoder 2 position (Corrected)	
+173   Encoder 3 position (Corrected)	
+174   MPG 3 Velocity %
+175   Turn X touch Offset
+176   Turn Z touch Offset
+177   Pierce Delay
+178   Axis Offset X
+179   Axis Offset Y
+180   Axis Offset Z
+181   Axis Offset A
+182   Axis Offset B
+183   Axis Offset C
+184   Work Offset X
+185   Work Offset Y
+186   Work Offset Z
+187   Work Offset A
+188   Work Offset B
+189   Work Offset C
+190   G20 X location
+191   G20 Y location
+192   G20 Z location
+193   G20 A location
+194   G20 B location
+195   G20 C location
+500   GRex State 
+501   GRex iters
+502   GRex grr_curr
+503   GRex grr_tgt
+504   GRex m_isr
+505   GRex i_isr
+506   GRex curr_mavg
+507   GRex Abs.p[0]
+508   GRex Abs.p[1]
+509   GRex Abs.p[2]
+510   GRex Abs.p[3]
+511   GRex Abs.p[4]
+512   GRex Abs.p[5]
+513   GRex NextQueueSeq
+514   GTxRx.m_Head
+515   GTxRx.m_LastAck
+516   Monitor->GRex.InWord
+517   Monitor->GRex.m_CVDRO
+800   X Position
+801   Y Position
+802   Z Position
+803   A Position
+804   B Position
+805   C Position
+806   X Velocity
+807   Y Velocity
+808   Z Velocity
+809   A Velocity
+810   B Velocity
+811   C Velocity
+813   Blended Vel
+816   Displayed Line
+817   SpindleSpeed
+818   Current FeedRate
+819   Current G Movement mode
+821   FeedOverRide Speed
+822   Tool Diam
+823   Tool ZOffset		 
+824   Current Tool
+825   Feed Correction Radius A
+826    Feed Correction Radius B
+827    Feed Correction Radius C
+828    Jog Incremetal amount 
+829    JogFeedRate
+830    Work offset x
+831    Work offset Y
+832    Work offset Z
+833    Work offset A
+834    Work offset B
+835    Work offset C
+ 
+		

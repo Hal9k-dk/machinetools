@@ -1,0 +1,42 @@
+Thu - 19:54:56 ---Program Startup
+Thu - 19:55:02 ---ReConfiguration Estop.
+Thu - 19:55:11 ---Is The XPod Inserted OK? It has ceased to Respond,...
+Thu - 19:55:28 ---LimitSwitch Triggered.
+Thu - 19:55:28 ---Device Error Triggered.
+Thu - 19:55:41 ---Get Usb Ack Error!
+
+Thu - 19:55:43 ---Get Usb Ack Error!
+
+Thu - 19:55:44 ---Device Error Triggered.
+Thu - 19:55:44 ---Get Usb Ack Error!
+
+Thu - 19:55:45 ---Get Usb Ack Error!
+
+Thu - 19:56:11 ---EStop Button Pressed.
+Thu - 19:56:19 ---Device Error Triggered.
+Thu - 19:57:05 ---Custom Macro #3
+Thu - 19:57:08 ---Custom Macro #4
+Thu - 19:57:11 ---Custom Macro #3
+Thu - 19:57:12 ---Custom Macro #4
+Thu - 19:57:14 ---Device Error Triggered.
+Thu - 19:57:35 ---PWM Bumped to minimum setting.
+Thu - 19:57:38 ---PWM Bumped to minimum setting.
+Thu - 19:58:46 ---PWM Bumped to minimum setting.
+Thu - 19:59:18 ---EStop Button Pressed.
+Thu - 19:59:19 ---Custom Macro #3
+Thu - 19:59:23 ---Custom Macro #3
+Thu - 19:59:27 ---Device Error Triggered.
+Thu - 20:00:20 ---PWM Bumped to minimum setting.
+Thu - 20:00:22 ---PWM Bumped to minimum setting.
+Thu - 20:01:01 ---PWM Bumped to minimum setting.
+Thu - 20:01:24 ---PWM Bumped to minimum setting.
+Thu - 20:01:28 ---PWM Bumped to minimum setting.
+Thu - 20:01:45 ---PWM Bumped to minimum setting.
+Thu - 20:01:57 ---PWM Bumped to minimum setting.
+Thu - 20:01:59 ---PWM Bumped to minimum setting.
+Thu - 20:01:59 ---PWM Bumped to minimum setting.
+Thu - 20:02:02 ---PWM Bumped to minimum setting.
+Thu - 20:12:58 ---T1 D=3. CR=0. - ZMIN=-3. - FLAT END MILL
+Thu - 20:12:59 ---2D ADAPTIVE1
+Thu - 20:43:50 ---Device Error Triggered.
+Thu - 20:47:14 ---Nothing to Feedhold

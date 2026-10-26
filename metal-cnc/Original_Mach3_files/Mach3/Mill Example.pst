@@ -1,0 +1,71 @@
+
+*******************************ProgramStart**********************************
+
+(Program posted with TestPost.pst)
+
+
+********************************ToolChange***********************************
+
+M5 M9 'Turn the spindle and coolant off
+M6 T{TOOLNUM} (TOOLChange) 'toolchange and put a note in the code that it is a ToolChange
+G43 H{TOOLNUM} 'Put in the Tool length offset and it is the same number as the ToolNUm
+
+
+********************************ChainStart***********************************
+
+
+***********************************Rapid*************************************
+
+[ G{MODE}(This is a rapid) ][ Z{RAPIDHEIGHT}]  'This will pick the Z up to the rapidheight 
+'and with the []'s if the data in the []'s has not changed it will not be put out
+
+'you can have white space :) and a note that is not on a Gcode line
+
+[G{MODE}][ X{XPOS}][ Y{YPOS}] 'Now move to the X and Y pos that 
+[{SPINDLEON}] 'Turn on the spindle and if it is on don't put out the M3
+[G{MODE}][ Z{ZPOS}] 'Move down to the height that the move was to end at
+
+
+***********************************ZRapid************************************
+'This is a Z only move to change the hieght of the tool.. this could be changed 
+'to {RAPIDHEIGHT} but the jobs will take longer to cut
+ 
+[G{MODE}] Z{ZPOS}
+
+
+************************************Line**************************************
+
+[G{MODE}][ X{XPOS}][ Y{YPOS}] [Z{ZPOS}] [F{FEED}]
+
+
+************************************Arc***************************************
+
+[G{MODE}][ X{XPOS}][ Y{YPOS}][ Z{ZPOS}] I{IPOS} J{JPOS}[ F{FEED}]
+
+
+********************************CanCycleStart*********************************
+
+G{MODE} X{XPOS} Y{YPOS} Z{ZPOS} R{RAPIDHEIGHT} F{FEED}
+
+
+**********************************InCanCycle**********************************
+
+[X{XPOS}][ Y{YPOS}]
+
+
+**********************************CanCycleEnd*********************************
+
+G{MODE}
+
+
+************************************ChainEnd**********************************
+
+
+**********************************ProgramEnd**********************************
+
+G{MODE} Z{RAPIDHEIGHT}
+
+
+
+
+

@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>FYDM504T — DM Series Two-Phase Stepper Driver (English datasheet)</title>
+<style>
+  :root{
+    --blue:#12a5dc;
+    --blue-dk:#0e93c6;
+    --cell:#ececec;
+    --cell-alt:#f6f6f6;
+    --ink:#1b1b1b;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; padding:28px 18px 60px;
+    background:#fff; color:var(--ink);
+    font-family:"Noto Sans","DejaVu Sans","Segoe UI",Arial,Helvetica,sans-serif;
+    font-size:15px; line-height:1.5;
+  }
+  .page{max-width:1180px;margin:0 auto;}
+
+  /* ---------- masthead ---------- */
+  .masthead{
+    display:flex;justify-content:space-between;align-items:flex-end;
+    border-bottom:4px solid var(--blue);padding-bottom:6px;
+  }
+  .masthead h1{font-size:29px;line-height:1.15;margin:0;font-weight:800;letter-spacing:.5px;}
+  .masthead .model{font-size:29px;font-weight:800;letter-spacing:1px;white-space:nowrap;}
+  .subtitle{color:#666;font-size:12.5px;margin:8px 0 4px;}
+
+  /* ---------- sections ---------- */
+  h2.sec{
+    background:var(--blue);color:#fff;font-size:16.5px;font-weight:700;
+    margin:26px 0 12px;padding:5px 10px;letter-spacing:.4px;
+  }
+  h2.sec.tight{margin-top:20px;}
+
+  /* ---------- two columns ---------- */
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:0 30px;align-items:start;}
+  .cols > div{min-width:0;}
+
+  /* ---------- tables ---------- */
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin:0;}
+  th{
+    background:var(--blue);color:#fff;font-weight:600;
+    padding:7px 9px;text-align:center;border:1px solid #fff;white-space:nowrap;
+  }
+  td{padding:7px 9px;text-align:center;border:1px solid #fff;background:var(--cell);}
+  tbody tr:nth-child(even) td{background:var(--cell-alt);}
+  td.name{white-space:nowrap;}
+  td.note{text-align:left;}
+  table.compact td,table.compact th{padding:4px 8px;font-size:13px;}
+
+  /* ---------- feature list ---------- */
+  ul.features{list-style:none;margin:0;padding:0;font-size:14.5px;}
+  ul.features li{position:relative;padding-left:22px;margin-bottom:6px;}
+  ul.features li::before{
+    content:"";position:absolute;left:2px;top:.42em;
+    width:9px;height:9px;background:#1b1b1b;
+  }
+  ul.features b{font-weight:700;letter-spacing:.6px;}
+  p.body{margin:0 0 10px;font-size:14.5px;text-align:justify;}
+
+  /* ---------- figures ---------- */
+  figure{margin:0 0 6px;}
+  figure svg{display:block;width:100%;height:auto;}
+  figcaption{font-size:12.5px;color:#555;margin-top:4px;}
+  .motor-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;}
+  .motor-grid figure{margin:0;text-align:center;}
+  .motor-grid svg{width:100%;height:auto;}
+  .motor-grid figcaption{font-size:11.5px;line-height:1.25;}
+
+  /* ---------- notes ---------- */
+  .note-head{display:flex;align-items:center;gap:12px;margin:30px 0 10px;}
+  .note-head .block{width:62px;height:26px;background:var(--blue);}
+  .note-head .title{color:var(--blue);font-size:22px;font-weight:800;}
+  ol.notes{font-size:14.5px;margin:0;padding-left:26px;}
+  ol.notes li{margin-bottom:7px;}
+  ol.notes li.none{list-style:none;padding-left:22px;margin-left:-26px;}
+
+  footer.site{
+    margin-top:36px;border-top:1px solid #ccc;padding-top:14px;
+    font-size:12.5px;color:#555;
+  }
+  footer.site .row{margin-bottom:4px;}
+  .kbd{font-family:inherit;background:#f0f0f0;border:1px solid #ddd;border-radius:3px;padding:0 4px;}
+
+  @media print{
+    body{padding:0;font-size:11.5px;}
+    h2.sec{font-size:13px;margin:14px 0 8px;}
+    table{font-size:10.5px;}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="masthead">
+    <h1>DM Series Two-Phase Stepper Driver</h1>
+    <div class="model">FYDM504T</div>
+  </div>
+  <p class="subtitle">
+    English translation of the XFOYO (兴丰元) FYDM504T product page datasheet ·
+    source: xfoyo.com/a/bujinqudong/liangxiangbujinqudongqi/417.html
+  </p>
+
+  <div class="cols">
+
+    <!-- ================= LEFT COLUMN ================= -->
+    <div class="left">
+
+      <h2 class="sec">Product Overview</h2>
+      <table>
+        <thead>
+          <tr><th>Model</th><th>Voltage</th><th>Drive current</th><th>Subdivision</th><th>Max. pulse frequency</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>FYDM504T</td>
+            <td>DC24~50V<br>AC20~40V</td>
+            <td>1.0 ~ 4.5 A/phase<br>8 settings, adjustable</td>
+            <td>Max. resolution<br>25600 steps/rev<br>16 settings, adjustable</td>
+            <td>250 Kpps</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2 class="sec">Product Features</h2>
+      <ul class="features">
+        <li><b>High performance, high efficiency:</b> the latest 32-bit DSP control technology, so the motor reaches its best output performance.</li>
+        <li><b>Low vibration, low noise:</b> automatically calculates the resonance point and effectively suppresses the motor's noise and vibration at low running speeds.</li>
+        <li><b>Small temperature rise, long life:</b> precision current control keeps the motor's temperature rise low.</li>
+        <li><b>Wide speed range:</b> with a suitable stepper motor, up to 1500 rpm.</li>
+        <li><b>Interference frequency filtering:</b> optically isolated differential signal input; pulse response frequency up to 250 Kpps.</li>
+        <li><b>Powerful, low repair rate:</b> uses imported industrial-grade components; mature and stable technology; fault-status indication and automatic protection for undervoltage, overvoltage, overcurrent, short circuit, open circuit, phase error, etc.</li>
+        <li><b>Compatible stepper motors:</b> 56, 60, 86 mm series.</li>
+      </ul>
+
+      <h2 class="sec">Application Fields</h2>
+      <p class="body">
+        Suitable for automation equipment and instruments in all kinds of motion-control fields, for example:
+        electronic machining and inspection, semiconductor packaging, laser cutting and welding, laser
+        phototypesetting, packaging machinery, engraving machines, marking machines, cutting machines,
+        garment plotters, CNC machine tools and automated assembly equipment. It is the first choice for
+        users in fields where low noise, superior high-speed performance and strong price/performance
+        competitiveness are expected.
+      </p>
+
+      <h2 class="sec">Driver Wiring Diagram</h2>
+      <figure>
+        <svg viewBox="0 0 800 800" role="img" aria-label="Driver wiring diagram">
+          <defs>
+            <marker id="warrow" markerWidth="9" markerHeight="9" refX="4.5" refY="4.5" orient="auto">
+              <path d="M0,0 L9,4.5 L0,9 z" fill="#1b1b1b"/>
+            </marker>
+          </defs>
+          <style>
+            .wl{stroke:#1b1b1b;stroke-width:1.2;fill:none;}
+            .wt{font:13px "Noto Sans","DejaVu Sans",sans-serif;fill:#1b1b1b;}
+            .wts{font:11.5px "Noto Sans","DejaVu Sans",sans-serif;fill:#1b1b1b;}
+            .wpin{font:12.5px "Noto Sans","DejaVu Sans",sans-serif;fill:#1b1b1b;}
+          </style>
+
+          <!-- driver housing -->
+          <rect x="420" y="40" width="170" height="720" fill="#fff" stroke="#1b1b1b" stroke-width="2"/>
+          <path d="M480 40 A15 15 0 0 0 510 40" class="wl" stroke-width="2"/>
+          <path d="M480 760 A15 15 0 0 1 510 760" class="wl" stroke-width="2"/>
+
+          <!-- indicator LEDs -->
+          <circle cx="470" cy="92" r="7" fill="#fff" stroke="#1b1b1b" stroke-width="1.4"/>
+          <circle cx="497" cy="92" r="7" fill="#fff" stroke="#1b1b1b" stroke-width="1.4"/>
+          <path d="M385 88 H 461" class="wl"/>
+          <path d="M385 96 H 490 V 100" class="wl"/>
+          <text class="wt" x="380" y="92" text-anchor="end">Power indicator LED (green)</text>
+          <text class="wt" x="380" y="124" text-anchor="end">Fault indicator LED (red)</text>
+
+          <!-- signal terminal block -->
+          <rect x="488" y="140" width="72" height="196" fill="#f2f2f2" stroke="#1b1b1b" stroke-width="1.2"/>
+          <text class="wpin" x="508" y="162" text-anchor="end">Pul+</text>
+          <circle cx="524" cy="158" r="7" fill="#fff" stroke="#1b1b1b" stroke-width="1.4"/>
+          <path d="M517 158 h14 M524 151 v14" class="wl" stroke-width="1"/>
+          <text class="wpin" x="508" y="194" text-anchor="end">Pul−</text>
+          <circle cx="524" cy="190" r="7" fill="#fff" stroke="#1b1b1b" stroke-width="1.4"/>
+          <path d="M517 190 h14 M524 183 v14" class="wl" stroke-width="1"/>
+          <text class="wpin" x="508" y="226" text-anchor="end">Dir+</text>
+          <circle cx="524" cy="222" r="7" fill="#fff" stroke="#1b1b1b" stroke-width="1.4"/>
+          <path d="M517 222 h14 M524 215 v14" class="wl" stroke-width="1"/>
+          <text class="wpin" x="508" y="258" text-anchor="end">Dir−</text>
+          <circle cx="524" cy="254" r="7" fill="#fff" stroke="#1b1b1b" stroke-width="1.4"/>
+          <path d="M517 254 h14 M524 247 v14" class="wl" stroke-width="1"/>
+          <text class="wpin" x="508" y="290" text-anchor="end">Ena+</text>
+          <circle cx="524" cy="286" r="7" fill="#fff" stroke="#1b1b1b" stroke-width="1.4"/>
+          <path d="M517 286 h14 M524 279 v14" class="wl" stroke-width="1"/>
+          <text class="wpin" x="508" y="322" text-anchor="end">Ena−</text>
+          <circle cx="524" cy="318" r="7" fill="#fff" stroke="#1b1b1b" stroke-width="1.4"/>
+          <path d="M517 318 h14 M524 311 v14" class="wl" stroke-width="1"/>
+
+          <!-- signal leaders -->
+          <path d="M385 158 H 484" class="wl"/>
+          <path d="M385 190 H 484" class="wl"/>
+          <path d="M385 222 H 484" class="wl"/>
+          <path d="M385 254 H 484" class="wl"/>
+          <path d="M385 286 H 484" class="wl"/>
+          <path d="M385 318 H 484" class="wl"/>
+          <text class="wt" x="380" y="162" text-anchor="end">Pulse signal +</text>
+          <text class="wt" x="380" y="194" text-anchor="end">Pulse signal −</text>
+          <text class="wt" x="380" y="226" text-anchor="end">Direction signal +</text>
+          <text class="wt" x="380" y="258" text-anchor="end">Direction signal −</text>
+          <text class="wt" x="380" y="290" text-anchor="end">Motor enable signal +</text>
+          <text class="wt" x="380" y="322" text-anchor="end">Motor enable signal −</text>
+
+          <!-- DIP switch block -->
+          <rect x="488" y="380" width="72" height="180" fill="#f2f2f2" stroke="#1b1b1b" stroke-width="1.2"/>
+          <g>
+            <!-- rows: SW8 (top) .. SW1 (bottom) -->
+            <text class="wts" x="494" y="396">SW8</text>
+            <rect x="528" y="385" width="26" height="14" fill="#fff" stroke="#1b1b1b"/>
+            <rect x="530" y="387" width="10" height="10" fill="#444"/>
+            <text class="wts" x="566" y="396">8</text>
+
+            <text class="wts" x="494" y="418">SW7</text>
+            <rect x="528" y="407" width="26" height="14" fill="#fff" stroke="#1b1b1b"/>
+            <rect x="530" y="409" width="10" height="10" fill="#444"/>
+            <text class="wts" x="566" y="418">7</text>
+
+            <text class="wts" x="494" y="440">SW6</text>
+            <rect x="528" y="429" width="26" height="14" fill="#fff" stroke="#1b1b1b"/>
+            <rect x="530" y="431" width="10" height="10" fill="#444"/>
+            <text class="wts" x="566" y="440">6</text>
+
+            <text class="wts" x="494" y="462">SW5</text>
+            <rect x="528" y="451" width="26" height="14" fill="#fff" stroke="#1b1b1b"/>
+            <rect x="530" y="453" width="10" height="10" fill="#444"/>
+            <text class="wts" x="566" y="462">5</text>
+
+            <text class="wts" x="494" y="484">SW4</text>
+            <rect x="528" y="473" width="26" height="14" fill="#fff" stroke="#1b1b1b"/>
+            <rect x="530" y="475" width="10" height="10" fill="#444"/>
+            <text class="wts" x="566" y="484">4</text>
+
+            <text class="wts" x="494" y="506">SW3</text>
+            <rect x="528" y="495" width="26" height="14" fill="#fff" stroke="#1b1b1b"/>
+            <rect x="530" y="497" width="10" height="10" fill="#444"/>
+            <text class="wts" x="566" y="506">3</text>
+
+            <text class="wts" x="494" y="528">SW2</text>
+            <rect x="528" y="517" width="26" height="14" fill="#fff" stroke="#1b1b1b"/>
+            <rect x="530" y="519" width="10" height="10" fill="#444"/>
+            <text class="wts" x="566" y="528">2</text>
+
+            <text class="wts" x="494" y="550">SW1</text>
+            <rect x="528" y="539" width="26" height="14" fill="#fff" stroke="#1b1b1b"/>
+            <rect x="530" y="541" width="10" height="10" fill="#444"/>
+            <text class="wts" x="566" y="550">1</text>
+          </g>
+
+          <!-- switch group brackets -->
+          <path d="M456 392 V 458 H 484" class="wl"/>
+          <text class="wt" x="450" y="429" text-anchor="end">Subdivision setting</text>
+          <path d="M456 484 H 484" class="wl"/>
+          <text class="wt" x="450" y="488" text-anchor="end">Holding-current select</text>
+          <path d="M456 506 V 546 H 484" class="wl"/>
+          <text class="wt" x="450" y="530" text-anchor="end">Current setting</text>
+
+          <!-- power / motor terminal block -->
+          <rect x="488" y="600" width="72" height="140" fill="#f2f2f2" stroke="#1b1b1b" stroke-width="1.2"/>
+          <text class="wpin" x="508" y="620" text-anchor="end">V−</text>
+          <circle cx="524" cy="616" r="7" fill="#fff" stroke="#1b1b1b" stroke-width="1.4"/>
+          <path d="M517 616 h14 M524 609 v14" class="wl" stroke-width="1"/>
+          <text class="wpin" x="508" y="642" text-anchor="end">V+</text>
+          <circle cx="524" cy="638" r="7" fill="#fff" stroke="#1b1b1b" stroke-width="1.4"/>
+          <path d="M517 638 h14 M524 631 v14" class="wl" stroke-width="1"/>
+          <text class="wpin" x="508" y="664" text-anchor="end">A+</text>
+          <circle cx="524" cy="660" r="7" fill="#fff" stroke="#1b1b1b" stroke-width="1.4"/>
+          <path d="M517 660 h14 M524 653 v14" class="wl" stroke-width="1"/>
+          <text class="wpin" x="508" y="686" text-anchor="end">A−</text>
+          <circle cx="524" cy="682" r="7" fill="#fff" stroke="#1b1b1b" stroke-width="1.4"/>
+          <path d="M517 682 h14 M524 675 v14" class="wl" stroke-width="1"/>
+          <text class="wpin" x="508" y="708" text-anchor="end">B+</text>
+          <circle cx="524" cy="704" r="7" fill="#fff" stroke="#1b1b1b" stroke-width="1.4"/>
+          <path d="M517 704 h14 M524 697 v14" class="wl" stroke-width="1"/>
+          <text class="wpin" x="508" y="730" text-anchor="end">B−</text>
+          <circle cx="524" cy="726" r="7" fill="#fff" stroke="#1b1b1b" stroke-width="1.4"/>
+          <path d="M517 726 h14 M524 719 v14" class="wl" stroke-width="1"/>
+
+          <!-- supply -->
+          <path d="M385 616 H 484" class="wl"/>
+          <path d="M385 638 H 484" class="wl"/>
+          <text class="wt" x="380" y="620" text-anchor="end">DC24–50V</text>
+          <text class="wt" x="380" y="642" text-anchor="end">AC20~40V</text>
+
+          <!-- motor -->
+          <rect x="170" y="592" width="180" height="146" rx="26" fill="#fff" stroke="#1b1b1b" stroke-width="1.4"/>
+          <path d="M350 660 H 484" class="wl"/>
+          <path d="M350 682 H 484" class="wl"/>
+          <path d="M350 704 H 484" class="wl"/>
+          <path d="M350 726 H 484" class="wl"/>
+          <text class="wt" x="200" y="668">A phase</text>
+          <text class="wt" x="200" y="712">B phase</text>
+          <text class="wt" x="262" y="582" text-anchor="middle">Motor</text>
+
+          <!-- communication port -->
+          <rect x="60" y="430" width="190" height="86" rx="3" fill="#fff" stroke="#1b1b1b" stroke-width="1.4"/>
+          <rect x="100" y="452" width="72" height="46" fill="#fff" stroke="#1b1b1b" stroke-width="1.2"/>
+          <path d="M104 452 v10 h64 v-10" class="wl" stroke-width="1"/>
+          <path d="M112 470 h48 M112 476 h48 M112 482 h48 M112 488 h48" class="wl" stroke-width="1"/>
+          <path d="M155 430 V 414" class="wl"/>
+          <text class="wt" x="155" y="408" text-anchor="middle">Communication port</text>
+        </svg>
+        <figcaption>Signals (left), the SW1–SW8 DIP switch bank, the power terminals and the motor
+        terminals (A+/A−, B+/B−), plus the communication port on the underside of the housing.</figcaption>
+      </figure>
+
+      <h2 class="sec">Running Current Setting</h2>
+      <table class="compact">
+        <thead><tr><th>Peak current</th><th>SW1</th><th>SW2</th><th>SW3</th></tr></thead>
+        <tbody>
+          <tr><td>1.0A</td><td>off</td><td>off</td><td>off</td></tr>
+          <tr><td>1.5A</td><td>on</td><td>off</td><td>off</td></tr>
+          <tr><td>2.0A</td><td>off</td><td>on</td><td>off</td></tr>
+          <tr><td>2.5A</td><td>on</td><td>on</td><td>off</td></tr>
+          <tr><td>3.0A</td><td>off</td><td>off</td><td>on</td></tr>
+          <tr><td>3.5A</td><td>on</td><td>off</td><td>on</td></tr>
+          <tr><td>4.0A</td><td>off</td><td>on</td><td>on</td></tr>
+          <tr><td>4.5A</td><td>on</td><td>on</td><td>on</td></tr>
+        </tbody>
+      </table>
+
+      <h2 class="sec">Input Signal Waveform Timing Diagram</h2>
+      <figure>
+        <svg viewBox="0 0 780 380" role="img" aria-label="Input signal timing diagram">
+          <defs>
+            <marker id="tarrow" markerWidth="9" markerHeight="9" refX="4.5" refY="4.5" orient="auto">
+              <path d="M0,0 L9,4.5 L0,9 z" fill="#1b1b1b"/>
+            </marker>
+            <marker id="tarrowrev" markerWidth="9" markerHeight="9" refX="4.5" refY="4.5" orient="auto-start-reverse">
+              <path d="M0,0 L9,4.5 L0,9 z" fill="#1b1b1b"/>
+            </marker>
+          </defs>
+          <style>
+            .tg{stroke:#1b1b1b;stroke-width:1.6;fill:none;}
+            .th{stroke:#1b1b1b;stroke-width:1;fill:none;}
+            .td{stroke:#1b1b1b;stroke-width:.9;stroke-dasharray:3 3;fill:none;}
+            .tt{font:12.5px "Noto Sans","DejaVu Sans",sans-serif;fill:#1b1b1b;}
+            .tts{font:11.5px "Noto Sans","DejaVu Sans",sans-serif;fill:#1b1b1b;}
+          </style>
+
+          <!-- axes -->
+          <path d="M60 350 V 20" class="th" marker-end="url(#tarrow)"/>
+          <path d="M60 350 H 760" class="th" marker-end="url(#tarrow)"/>
+
+          <!-- PUL -->
+          <text class="tt" x="50" y="92" text-anchor="end">PUL</text>
+          <path class="tg" d="M60 70 H150 V105 H180 V70 H215 V105 H255 V70 H380 V105 H410 V70 H450 V105 H480 V70 H740"/>
+          <!-- DIR -->
+          <text class="tt" x="50" y="205" text-anchor="end">DIR</text>
+          <path class="tg" d="M60 180 H215 V215 H500 V180 H740"/>
+          <!-- ENA -->
+          <text class="tt" x="50" y="315" text-anchor="end">ENA</text>
+          <path class="tg" d="M60 325 H100 V290 H740"/>
+
+          <!-- T3 -->
+          <path class="th" d="M150 44 H180" marker-start="url(#tarrowrev)" marker-end="url(#tarrow)"/>
+          <text class="tts" x="165" y="38" text-anchor="middle">T3</text>
+          <path class="td" d="M150 70 V44 M180 70 V44"/>
+          <!-- T2 -->
+          <path class="th" d="M255 26 H380" marker-start="url(#tarrowrev)" marker-end="url(#tarrow)"/>
+          <text class="tts" x="317" y="20" text-anchor="middle">T2 &gt; 1µs</text>
+          <path class="td" d="M380 70 V26"/>
+          <!-- T4 -->
+          <path class="th" d="M215 126 H255" marker-start="url(#tarrowrev)" marker-end="url(#tarrow)"/>
+          <text class="tts" x="235" y="142" text-anchor="middle">T4</text>
+          <path class="td" d="M215 105 V126 M255 105 V126"/>
+          <!-- level notes on PUL -->
+          <path class="th" d="M620 60 V70" marker-end="url(#tarrow)"/>
+          <text class="tts" x="560" y="56">High level above 3.5V</text>
+          <path class="th" d="M560 122 V105" marker-end="url(#tarrow)"/>
+          <text class="tts" x="490" y="134">Low level below 0.5V</text>
+          <!-- level notes on DIR -->
+          <path class="th" d="M620 170 V180" marker-end="url(#tarrow)"/>
+          <text class="tts" x="560" y="166">High level above 3.5V</text>
+          <path class="th" d="M390 227 V215" marker-end="url(#tarrow)"/>
+          <text class="tts" x="320" y="239">Low level below 0.5V</text>
+          <!-- level note on ENA -->
+          <path class="th" d="M360 280 V290" marker-end="url(#tarrow)"/>
+          <text class="tts" x="290" y="276">Low level below 0.5V</text>
+
+          <!-- T1 -->
+          <path class="th" d="M78 255 H100" marker-end="url(#tarrow)"/>
+          <text class="tts" x="104" y="259">T1</text>
+          <text class="tts" x="134" y="259">&gt;5µs</text>
+          <path class="td" d="M100 350 V70"/>
+        </svg>
+        <figcaption>Only T1 (&gt; 5 µs) and T2 (&gt; 1 µs) are given numerically in the original; T3 and T4 mark
+        pulse-width intervals the datasheet leaves unlabelled. Level annotations: high level above 3.5 V,
+        low level below 0.5 V.</figcaption>
+      </figure>
+
+    </div><!-- /left -->
+
+    <!-- ================= RIGHT COLUMN ================= -->
+    <div class="right">
+
+      <h2 class="sec">Product Mounting Dimensions</h2>
+      <figure>
+        <svg viewBox="0 0 780 590" role="img" aria-label="Mounting dimensions (mm)">
+          <defs>
+            <marker id="dar" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+              <path d="M0,0 L8,4 L0,8 z" fill="#1b1b1b"/>
+            </marker>
+            <marker id="darrev" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto-start-reverse">
+              <path d="M0,0 L8,4 L0,8 z" fill="#1b1b1b"/>
+            </marker>
+          </defs>
+          <style>
+            .ds{stroke:#1b1b1b;stroke-width:1.6;fill:none;}
+            .dl{stroke:#1b1b1b;stroke-width:.9;fill:none;}
+            .dd{stroke:#1b1b1b;stroke-width:.9;fill:none;}
+            .dt{font:12px "Noto Sans","DejaVu Sans",sans-serif;fill:#1b1b1b;}
+          </style>
+
+          <!-- ===== side view ===== -->
+          <rect x="80" y="70" width="136" height="448" class="ds"/>
+          <rect x="104" y="118" width="52" height="352" class="dl"/>
+          <circle cx="122" cy="94" r="5" class="dl"/>
+          <circle cx="144" cy="94" r="5" class="dl"/>
+          <path d="M114 70 A9 9 0 0 0 132 70" class="ds"/>
+          <path d="M114 518 A9 9 0 0 1 132 518" class="ds"/>
+
+          <!-- 34 -->
+          <path class="dl" d="M80 70 V 40 M216 70 V 40"/>
+          <path class="dd" d="M80 44 H216" marker-start="url(#darrev)" marker-end="url(#dar)"/>
+          <text class="dt" x="148" y="36" text-anchor="middle">34</text>
+          <!-- 4.5 -->
+          <path class="dl" d="M114 70 V 56 M132 70 V 56"/>
+          <path class="dd" d="M114 60 H132" marker-start="url(#darrev)" marker-end="url(#dar)"/>
+          <text class="dt" x="150" y="64">4.5</text>
+          <!-- 112 -->
+          <path class="dd" d="M52 70 V518" marker-start="url(#darrev)" marker-end="url(#dar)"/>
+          <text class="dt" x="44" y="298" text-anchor="middle" transform="rotate(-90 44 298)">112</text>
+          <path class="dl" d="M52 70 H80 M52 518 H80"/>
+          <!-- 10.5 -->
+          <path class="dl" d="M80 518 V 552 M132 518 V 552"/>
+          <path class="dd" d="M80 548 H132" marker-start="url(#darrev)" marker-end="url(#dar)"/>
+          <text class="dt" x="70" y="566" text-anchor="middle">10.5</text>
+
+          <!-- ===== front view ===== -->
+          <rect x="400" y="46" width="302" height="472" class="ds"/>
+          <path class="dl" d="M416 46 V518"/>
+          <circle cx="510" cy="58" r="8" class="dl"/>
+          <circle cx="601" cy="58" r="8" class="dl"/>
+          <circle cx="510" cy="506" r="8" class="dl"/>
+          <circle cx="601" cy="506" r="8" class="dl"/>
+          <path class="dl" d="M400 505 H 695" stroke-dasharray="0"/>
+          <text class="dt" x="640" y="482">4-&#934;4</text>
+          <path class="dl" d="M636 486 L 606 502"/>
+
+          <!-- 48 -->
+          <path class="dl" d="M510 46 V 22 M702 46 V 22"/>
+          <path class="dd" d="M510 26 H702" marker-start="url(#darrev)" marker-end="url(#dar)"/>
+          <text class="dt" x="620" y="18" text-anchor="middle">48</text>
+          <!-- 25.3 -->
+          <path class="dl" d="M601 46 V 38 M702 46 V 38"/>
+          <path class="dd" d="M601 42 H702" marker-start="url(#darrev)" marker-end="url(#dar)"/>
+          <text class="dt" x="660" y="34" text-anchor="middle">25.3</text>
+          <!-- 118 -->
+          <path class="dl" d="M366 46 H400 M366 518 H400"/>
+          <path class="dd" d="M372 46 V518" marker-start="url(#darrev)" marker-end="url(#dar)"/>
+          <text class="dt" x="364" y="286" text-anchor="middle" transform="rotate(-90 364 286)">118</text>
+          <!-- 112 (hole rows) -->
+          <path class="dl" d="M702 58 H736 M702 506 H736"/>
+          <path class="dd" d="M730 58 V506" marker-start="url(#darrev)" marker-end="url(#dar)"/>
+          <text class="dt" x="744" y="286" text-anchor="middle" transform="rotate(-90 744 286)">112</text>
+          <!-- 75.5 -->
+          <path class="dl" d="M400 518 V 552 M702 518 V 552"/>
+          <path class="dd" d="M400 548 H702" marker-start="url(#darrev)" marker-end="url(#dar)"/>
+          <text class="dt" x="551" y="566" text-anchor="middle">75.5</text>
+        </svg>
+        <figcaption>Units: mm. Left: side view — 34 wide × 112 high, housing notch 4.5 wide, 10.5 from the
+        edge. Right: front view — 75.5 wide × 118 high, four Φ4 mounting holes; the hole rows are 112 mm
+        apart, and the two hole columns are 48 mm and 25.3 mm from the right-hand edge (22.7 mm apart).</figcaption>
+      </figure>
+
+      <div class="motor-grid" style="grid-template-columns:1fr 1fr;max-width:420px;margin:10px auto 0;">
+        <figure>
+          <img src="product_photo.png" alt="FYDM504T stepper driver" style="width:100%;height:auto;">
+        </figure>
+      </div>
+
+      <h2 class="sec">Indicator and Pin Function Description</h2>
+      <table>
+        <thead><tr><th>Marking</th><th>Name</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr><td class="name">PWR</td><td class="name">Power indicator LED</td><td class="note">Lights green when powered on.</td></tr>
+          <tr><td class="name">ALARM</td><td class="name">Overcurrent / undervoltage indicator LED</td><td class="note">Lights red when the current is too high or the voltage is too low.</td></tr>
+          <tr><td class="name">PUL+</td><td class="name">Pulse signal, positive terminal</td><td class="note">Connect to the signal supply; +5 V to +24 V will all drive it.</td></tr>
+          <tr><td class="name">PUL−</td><td class="name">Pulse signal, negative terminal</td><td class="note">Falling edge is active — the motor takes one step each time the pulse goes from high to low. Input resistance 220 Ω; requirements: low level 0 to 0.5 V, high level 4 to 5 V, pulse width &gt; 2.5 µs.</td></tr>
+          <tr><td class="name">DIR+</td><td class="name">Direction signal, positive terminal</td><td class="note">Connect to the signal supply; +5 V to +24 V will all drive it.</td></tr>
+          <tr><td class="name">DIR−</td><td class="name">Direction signal, negative terminal</td><td class="note">Used to change the motor's direction of rotation. Input resistance 220 Ω; requirements: low level 0 to 0.5 V, high level 4 to 5 V, pulse width &gt; 2.5 µs.</td></tr>
+          <tr><td class="name">ENA+</td><td class="name">Enable signal, positive terminal</td><td class="note">Connect to the signal supply; +5 V to +24 V will all drive it.</td></tr>
+          <tr><td class="name">ENA−</td><td class="name">Enable signal, negative terminal</td><td class="note">When active (low level) it cuts off the motor coil current; the driver stops working and the motor is in a free state.</td></tr>
+          <tr><td class="name">V−</td><td class="name">Supply, negative pole</td><td class="note">DC24V ~ 50V / AC20 ~ 40V</td></tr>
+          <tr><td class="name">V+</td><td class="name">Supply, positive pole</td><td class="note">DC24V ~ 50V / AC20 ~ 40V</td></tr>
+          <tr><td class="name">A− A+<br>B+ B−</td><td class="name">Motor wiring</td><td class="note">See the four winding options below.</td></tr>
+        </tbody>
+      </table>
+
+      <div class="motor-grid">
+        <figure>
+          <svg viewBox="0 0 150 130" role="img" aria-label="4-lead motor wiring">
+            <style>.mw{stroke:#1b1b1b;stroke-width:1.2;fill:none;} .mt{font:11px sans-serif;fill:#1b1b1b;}</style>
+            <text class="mt" x="4" y="26">A+</text>
+            <path class="mw" d="M28 22 q10 -8 20 0 q10 8 20 0"/>
+            <circle cx="90" cy="70" r="17" class="mw"/>
+            <text class="mt" x="84" y="75">M</text>
+            <path class="mw" d="M28 34 H 73"/>
+            <text class="mt" x="4" y="38">A−</text>
+            <path class="mw" d="M107 70 H 130"/>
+            <path class="mw" d="M60 87 v 16 M70 87 v 16 M80 87 v 16"/>
+            <text class="mt" x="34" y="122">B+</text>
+            <text class="mt" x="70" y="122">B−</text>
+          </svg>
+          <figcaption>4-lead</figcaption>
+        </figure>
+        <figure>
+          <svg viewBox="0 0 150 130" role="img" aria-label="6-lead motor wiring">
+            <style>.mw2{stroke:#1b1b1b;stroke-width:1.2;fill:none;} .mt2{font:11px sans-serif;fill:#1b1b1b;}</style>
+            <text class="mt2" x="4" y="26">A+</text>
+            <text class="mt2" x="4" y="52">NC</text>
+            <text class="mt2" x="4" y="78">A−</text>
+            <path class="mw2" d="M36 22 q10 -8 20 0 q10 8 20 0"/>
+            <path class="mw2" d="M36 48 H 76"/>
+            <path class="mw2" d="M36 74 H 76"/>
+            <circle cx="98" cy="70" r="17" class="mw2"/>
+            <text class="mt2" x="92" y="75">M</text>
+            <path class="mw2" d="M115 70 H 134"/>
+            <path class="mw2" d="M64 87 v 16 M74 87 v 16 M84 87 v 16"/>
+            <text class="mt2" x="36" y="122">B+</text>
+            <text class="mt2" x="62" y="122">NC</text>
+            <text class="mt2" x="90" y="122">B−</text>
+          </svg>
+          <figcaption>6-lead (centre taps unused)</figcaption>
+        </figure>
+        <figure>
+          <svg viewBox="0 0 150 130" role="img" aria-label="8-lead motor wiring, high speed">
+            <style>.mw3{stroke:#1b1b1b;stroke-width:1.2;fill:none;} .mt3{font:11px sans-serif;fill:#1b1b1b;}</style>
+            <text class="mt3" x="4" y="26">A+</text>
+            <text class="mt3" x="4" y="44">A−</text>
+            <path class="mw3" d="M28 22 q10 -8 20 0 q10 8 20 0"/>
+            <path class="mw3" d="M28 40 q10 -8 20 0 q10 8 20 0"/>
+            <circle cx="92" cy="66" r="17" class="mw3"/>
+            <text class="mt3" x="86" y="71">M</text>
+            <path class="mw3" d="M70 22 H 108 V 56"/>
+            <path class="mw3" d="M70 40 H 100 V 56"/>
+            <path class="mw3" d="M109 76 H 130"/>
+            <path class="mw3" d="M62 83 v 16 M72 83 v 16 M82 83 v 16"/>
+            <text class="mt3" x="36" y="122">B+</text>
+            <text class="mt3" x="74" y="122">B−</text>
+          </svg>
+          <figcaption>8-lead — parallel (for high speed)</figcaption>
+        </figure>
+        <figure>
+          <svg viewBox="0 0 150 130" role="img" aria-label="8-lead motor wiring, low speed">
+            <style>.mw4{stroke:#1b1b1b;stroke-width:1.2;fill:none;} .mt4{font:11px sans-serif;fill:#1b1b1b;}</style>
+            <text class="mt4" x="4" y="26">A+</text>
+            <text class="mt4" x="4" y="44">A−</text>
+            <path class="mw4" d="M28 22 q10 -8 20 0 q10 8 20 0"/>
+            <path class="mw4" d="M28 40 q10 -8 20 0 q10 8 20 0"/>
+            <path class="mw4" d="M68 22 H 96 V 40"/>
+            <circle cx="112" cy="66" r="17" class="mw4"/>
+            <text class="mt4" x="106" y="71">M</text>
+            <path class="mw4" d="M96 40 H 122 V 54"/>
+            <path class="mw4" d="M129 76 H 144"/>
+            <path class="mw4" d="M62 83 v 16 M72 83 v 16 M82 83 v 16"/>
+            <text class="mt4" x="36" y="122">B+</text>
+            <text class="mt4" x="74" y="122">B−</text>
+          </svg>
+          <figcaption>8-lead — series (for low speed)</figcaption>
+        </figure>
+      </div>
+
+      <h2 class="sec">Microstep Subdivision Setting</h2>
+      <table class="compact">
+        <thead><tr><th>Pulses/rev</th><th>SW5</th><th>SW6</th><th>SW7</th><th>SW8</th></tr></thead>
+        <tbody>
+          <tr><td>default</td><td>on</td><td>on</td><td>on</td><td>on</td></tr>
+          <tr><td>400</td><td>off</td><td>on</td><td>on</td><td>on</td></tr>
+          <tr><td>800</td><td>on</td><td>off</td><td>on</td><td>on</td></tr>
+          <tr><td>1600</td><td>off</td><td>off</td><td>on</td><td>on</td></tr>
+          <tr><td>3200</td><td>on</td><td>on</td><td>off</td><td>on</td></tr>
+          <tr><td>6400</td><td>off</td><td>on</td><td>off</td><td>on</td></tr>
+          <tr><td>12800</td><td>on</td><td>off</td><td>off</td><td>on</td></tr>
+          <tr><td>25600</td><td>off</td><td>off</td><td>off</td><td>on</td></tr>
+          <tr><td>1000</td><td>on</td><td>on</td><td>on</td><td>off</td></tr>
+          <tr><td>2000</td><td>off</td><td>on</td><td>on</td><td>off</td></tr>
+          <tr><td>4000</td><td>on</td><td>off</td><td>on</td><td>off</td></tr>
+          <tr><td>5000</td><td>off</td><td>off</td><td>on</td><td>off</td></tr>
+          <tr><td>8000</td><td>on</td><td>on</td><td>off</td><td>off</td></tr>
+          <tr><td>10000</td><td>off</td><td>on</td><td>off</td><td>off</td></tr>
+          <tr><td>20000</td><td>on</td><td>off</td><td>off</td><td>off</td></tr>
+          <tr><td>25000</td><td>off</td><td>off</td><td>off</td><td>off</td></tr>
+        </tbody>
+      </table>
+
+    </div><!-- /right -->
+  </div><!-- /cols -->
+
+  <!-- ================= NOTES ================= -->
+  <div class="note-head">
+    <div class="block"></div>
+    <svg width="26" height="26" viewBox="0 0 26 26" role="img" aria-label="Note">
+      <circle cx="13" cy="13" r="11" fill="none" stroke="#e6007e" stroke-width="2.2"/>
+      <circle cx="13" cy="19" r="1.6" fill="#e6007e"/>
+      <path d="M13 6 v9" stroke="#e6007e" stroke-width="2.6"/>
+    </svg>
+    <span class="title">Note</span>
+  </div>
+  <ol class="notes">
+    <li>The input voltage must not exceed DC50V / AC40V. When the driver is powered up, the green PWR indicator lights.</li>
+    <li>If the driver's fault indicator lights, check the motor wiring and the control signal lines. If it is a motor-wiring or other short-circuit fault, it must be powered off and on again to recover after the fault is cleared.</li>
+    <li>SW4 sets the holding-current function: <b>ON = Full Current</b>, <b>OFF = Half Current</b>. SW4 is set to OFF at the factory, which reduces heat generation in the motor and driver and improves reliability. The current is automatically reduced by 50&nbsp;% 100&nbsp;ms after the pulse train stops.</li>
+    <li>This driver has a single/double pulse selection function, settable through the communication port; the factory default is <b>pulse + direction</b>.</li>
+  </ol>
+
+  <footer class="site">
+    <div class="row"><b>Source page furniture (not part of the datasheet):</b></div>
+    <div class="row">Home &gt; Stepper Drives &gt; Two-Phase Stepper Drivers · (Click here to jump to Taobao to buy) · Product description</div>
+    <div class="row">Previous: FYDM402T &nbsp;·&nbsp; Next: FYDM506T2 (discontinued) &nbsp;·&nbsp; Recommended related products</div>
+    <div class="row">Friendly links: XFOYO – Alibaba International Store · Alibaba Chinese Store · Taobao Enterprise Store · Taobao Personal Store · English official website</div>
+    <div class="row">Switchboard: 0755-27369350 &nbsp;·&nbsp; Phone: 13662209061 (Ms. Liu) &nbsp;·&nbsp; Email: sales@xfoyo.com</div>
+    <div class="row">Address: Building D, Hedong Industrial Park, Hangcheng Industrial Zone, Xixiang Street, Bao'an District, Shenzhen</div>
+    <div class="row">Copyright © Shenzhen XFOYO Electromechanical Co., Ltd. &nbsp;·&nbsp; ICP filing: 粤ICP备06058014号-4</div>
+    <div class="row" style="margin-top:10px;">
+      <b>Translation notes:</b> page 2 of the source PDF is blank (a print artifact). The datasheet lists the
+      compatible motors as the “56, 60, 86&nbsp;mm” series; 56&nbsp;mm is what is printed and the standard frame size is
+      57&nbsp;mm (NEMA&nbsp;23), so this is likely a typo in the original. Terminology: 细分 = microstepping,
+      锁机电流 = holding current, 脉冲/圈 = pulses per revolution.
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>

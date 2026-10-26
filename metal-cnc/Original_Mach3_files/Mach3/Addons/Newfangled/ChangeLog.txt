@@ -1,0 +1,56 @@
+Fix log, Newfangled.set
+V2.75
+
+10/1/07 Found DRO 1018 duplicated on tool screen and bolt circle- screen 20. Fixed screen 20 to use 1019
+
+10/17/07 Fixed Material screen to read path instead of assuming C:Mach3
+
+10/20/07 Major redesign of tool screen. Added button to read tool table.
+
+V2.76 
+Fixed thread screens
+
+V2.77
+Fixed surface screen
+Fixed comp radius in Circle lead in. Was ToolR*1.15, changed to ToolR*1.5
+Fixed bug in thread screens
+Found some junk in Bitmaps folder, deleted and cut zip file by 300kb
+
+V2.78 April 14, 08
+Fixed rotate in Cut Rectangle
+Added Gcode window to Preview screen. This was added in an earlier version but somehow got lost
+Fixed edit operations on main screen to handle main folder other than C:\Mach3
+
+V2.79 Aug 25, 08
+Changed screen layout to show version number ans working units on all screens. HAd to move a few DROss around to clear screens
+
+Fixed tool unit handling. Will now do metric tool units correctly, and will allow mixed units- ie an engish program can specify a metric tool. The 'Continue' button on the tool screen will adjust the units if needed and pop-up a mesage box
+
+V2.80 Nov 24, 08
+Fixed Cut Rectangle to include F word after plunge 
+Fixed inner to actually be inner, was cutting outside when inside requested.
+
+V2.81 Dec 1 08
+Fixed preview screen of cut rectangle to match changes to Post
+Corrected G41/G42 in cut rectangle and tested all cases. I REALLY think its right now!
+Fixed CW/CCw in circular pocket- it was reversed
+
+V2.82 Dec 8, 08
+Fixed depth per pass in Preview code for Cut Rectangle, it was using an old DRO value that always had 0.01 instead of the correct value.
+Fixed Climb.Conv in circular pocket- label was reversed
+Fixed code to support Tormach. Changed pathstrign to use FSO, and fixed tool table to
+skip description if pathstring not C:\Mach3
+
+V2.83 March 22, 09
+Fixed some problmes caused by new comp code needing to always end on a linear move not an arc.
+Fixed thread mill and surface so preview code did not change tool settings.
+Fixed Cut rectangle to handle lower right corner rad correctly- was outputing redundant move if no corner radius
+ 
+V2.84 March 13, 2010
+Thread milling for inside, LH thread was not subtracting tool radius. 
+
+V2.85 Nov, 19. 2010
+Cut Rectangle would do infinite loop if cut per was greater than cut depth
+
+V2.86 May 23, 2011
+Material number shared DRO with Xcenter in rectangular pocket.

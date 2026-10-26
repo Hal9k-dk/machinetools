@@ -1,0 +1,101 @@
+get whbx device end
+get whbx device
+\\?\hid#vid_10ce&pid_eb73&mi_00&col01#8&b96e93b&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}rlength:98 
+\\?\hid#vid_10ce&pid_eb73&mi_00&col02#8&b96e93b&0&0001#{4d1e55b2-f16f-11cf-88cb-001111000030}rlength:98 
+\\?\hid#vid_10ce&pid_eb73&mi_01#8&18405487&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}rlength:93 
+get whbx device end
+get whbx device
+\\?\hid#vid_10ce&pid_eb73&mi_00&col01#8&b96e93b&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}rlength:98 
+\\?\hid#vid_10ce&pid_eb73&mi_00&col02#8&b96e93b&0&0001#{4d1e55b2-f16f-11cf-88cb-001111000030}rlength:98 
+\\?\hid#vid_10ce&pid_eb73&mi_01#8&18405487&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}rlength:93 
+get whbx device end
+get whbx device
+\\?\hid#vid_10ce&pid_eb73&mi_00&col01#8&b96e93b&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}rlength:98 
+\\?\hid#vid_10ce&pid_eb73&mi_00&col02#8&b96e93b&0&0001#{4d1e55b2-f16f-11cf-88cb-001111000030}rlength:98 
+\\?\hid#vid_10ce&pid_eb73&mi_01#8&18405487&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}rlength:93 
+get whbx device end
+get whbx device
+\\?\hid#vid_10ce&pid_eb73&mi_00&col01#8&b96e93b&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}rlength:98 
+\\?\hid#vid_10ce&pid_eb73&mi_00&col02#8&b96e93b&0&0001#{4d1e55b2-f16f-11cf-88cb-001111000030}rlength:98 
+\\?\hid#vid_10ce&pid_eb73&mi_01#8&18405487&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}rlength:93 
+get whbx device end
+get whbx device
+\\?\hid#vid_10ce&pid_eb73&mi_00&col01#8&b96e93b&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}rlength:98 
+\\?\hid#vid_10ce&pid_eb73&mi_00&col02#8&b96e93b&0&0001#{4d1e55b2-f16f-11cf-88cb-001111000030}rlength:98 
+\\?\hid#vid_10ce&pid_eb73&mi_01#8&18405487&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}rlength:93 
+get whbx device end
+get whbx device
+\\?\hid#vid_10ce&pid_eb73&mi_00&col01#8&b96e93b&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}rlength:98 
+\\?\hid#vid_10ce&pid_eb73&mi_00&col02#8&b96e93b&0&0001#{4d1e55b2-f16f-11cf-88cb-001111000030}rlength:98 
+\\?\hid#vid_10ce&pid_eb73&mi_01#8&18405487&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}rlength:93 
+get whbx device end
+get whbx device
+\\?\hid#vid_10ce&pid_eb73&mi_00&col01#8&b96e93b&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}rlength:98 
+\\?\hid#vid_10ce&pid_eb73&mi_00&col02#8&b96e93b&0&0001#{4d1e55b2-f16f-11cf-88cb-001111000030}rlength:98 
+\\?\hid#vid_10ce&pid_eb73&mi_01#8&18405487&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}rlength:93 
+get whbx device end
+get whbx device
+\\?\hid#vid_10ce&pid_eb73&mi_00&col01#8&b96e93b&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}rlength:98 
+\\?\hid#vid_10ce&pid_eb73&mi_00&col02#8&b96e93b&0&0001#{4d1e55b2-f16f-11cf-88cb-001111000030}rlength:98 
+\\?\hid#vid_10ce&pid_eb73&mi_01#8&18405487&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}rlength:93 
+get whbx device end
+get whbx device
+\\?\hid#vid_10ce&pid_eb73&mi_00&col01#8&b96e93b&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}rlength:98 
+\\?\hid#vid_10ce&pid_eb73&mi_00&col02#8&b96e93b&0&0001#{4d1e55b2-f16f-11cf-88cb-001111000030}rlength:98 
+\\?\hid#vid_10ce&pid_eb73&mi_01#8&18405487&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}rlength:93 
+get whbx device end
+get whbx device
+\\?\hid#vid_10ce&pid_eb73&mi_00&col01#8&b96e93b&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}rlength:98 
+\\?\hid#vid_10ce&pid_eb73&mi_00&col02#8&b96e93b&0&0001#{4d1e55b2-f16f-11cf-88cb-001111000030}rlength:98 
+\\?\hid#vid_10ce&pid_eb73&mi_01#8&18405487&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}rlength:93 
+get whbx device end
+get whbx device
+\\?\hid#vid_10ce&pid_eb73&mi_00&col01#8&b96e93b&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}rlength:98 
+\\?\hid#vid_10ce&pid_eb73&mi_00&col02#8&b96e93b&0&0001#{4d1e55b2-f16f-11cf-88cb-001111000030}rlength:98 
+\\?\hid#vid_10ce&pid_eb73&mi_01#8&18405487&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}rlength:93 
+get whbx device end
+get whbx device
+\\?\hid#vid_10ce&pid_eb73&mi_00&col01#8&b96e93b&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}rlength:98 
+\\?\hid#vid_10ce&pid_eb73&mi_00&col02#8&b96e93b&0&0001#{4d1e55b2-f16f-11cf-88cb-001111000030}rlength:98 
+\\?\hid#vid_10ce&pid_eb73&mi_01#8&18405487&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}rlength:93 
+get whbx device end
+get whbx device
+\\?\hid#vid_10ce&pid_eb73&mi_00&col01#8&b96e93b&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}rlength:98 
+\\?\hid#vid_10ce&pid_eb73&mi_00&col02#8&b96e93b&0&0001#{4d1e55b2-f16f-11cf-88cb-001111000030}rlength:98 
+\\?\hid#vid_10ce&pid_eb73&mi_01#8&18405487&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}rlength:93 
+get whbx device end
+get whbx device
+\\?\hid#vid_10ce&pid_eb73&mi_00&col01#8&b96e93b&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}rlength:98 
+\\?\hid#vid_10ce&pid_eb73&mi_00&col02#8&b96e93b&0&0001#{4d1e55b2-f16f-11cf-88cb-001111000030}rlength:98 
+\\?\hid#vid_10ce&pid_eb73&mi_01#8&18405487&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}rlength:93 
+get whbx device end
+get whbx device
+\\?\hid#vid_10ce&pid_eb73&mi_00&col01#8&b96e93b&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}rlength:98 
+\\?\hid#vid_10ce&pid_eb73&mi_00&col02#8&b96e93b&0&0001#{4d1e55b2-f16f-11cf-88cb-001111000030}rlength:98 
+\\?\hid#vid_10ce&pid_eb73&mi_01#8&18405487&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}rlength:93 
+get whbx device end
+get whbx device
+\\?\hid#vid_10ce&pid_eb73&mi_00&col01#8&b96e93b&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}rlength:98 
+\\?\hid#vid_10ce&pid_eb73&mi_00&col02#8&b96e93b&0&0001#{4d1e55b2-f16f-11cf-88cb-001111000030}rlength:98 
+\\?\hid#vid_10ce&pid_eb73&mi_01#8&18405487&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}rlength:93 
+get whbx device end
+get whbx device
+\\?\hid#vid_10ce&pid_eb73&mi_00&col01#8&b96e93b&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}rlength:98 
+\\?\hid#vid_10ce&pid_eb73&mi_00&col02#8&b96e93b&0&0001#{4d1e55b2-f16f-11cf-88cb-001111000030}rlength:98 
+\\?\hid#vid_10ce&pid_eb73&mi_01#8&18405487&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}rlength:93 
+\\?\hid#vid_10ce&pid_eb93&col01#7&2134c170&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}rlength:93 
+\\?\hid#vid_10ce&pid_eb93&col02#7&2134c170&0&0001#{4d1e55b2-f16f-11cf-88cb-001111000030}rlength:93 
+get whbx device ok
+get whbx device end
+\\?\hid#vid_10ce&pid_eb93&col01#7&2134c170&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}\\?\hid#vid_10ce&pid_eb93&col02#7&2134c170&0&0001#{4d1e55b2-f16f-11cf-88cb-001111000030}get whbx device direct ok
+\\?\hid#vid_10ce&pid_eb93&col01#7&2134c170&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}\\?\hid#vid_10ce&pid_eb93&col02#7&2134c170&0&0001#{4d1e55b2-f16f-11cf-88cb-001111000030}get whbx device direct ok
+\\?\hid#vid_10ce&pid_eb93&col01#7&34837ac3&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}\\?\hid#vid_10ce&pid_eb93&col02#7&34837ac3&0&0001#{4d1e55b2-f16f-11cf-88cb-001111000030}get whbx device direct ok
+\\?\hid#vid_10ce&pid_eb93&col01#7&34837ac3&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}\\?\hid#vid_10ce&pid_eb93&col02#7&34837ac3&0&0001#{4d1e55b2-f16f-11cf-88cb-001111000030}get whbx device direct ok
+get whbx device
+\\?\hid#vid_10ce&pid_eb73&mi_00&col01#8&a754d08&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}rlength:98 
+\\?\hid#vid_10ce&pid_eb73&mi_00&col02#8&a754d08&0&0001#{4d1e55b2-f16f-11cf-88cb-001111000030}rlength:98 
+\\?\hid#vid_10ce&pid_eb73&mi_01#8&1961f0ba&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}rlength:93 
+\\?\hid#vid_10ce&pid_eb93&col01#7&34837ac3&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}rlength:93 
+\\?\hid#vid_10ce&pid_eb93&col02#7&34837ac3&0&0001#{4d1e55b2-f16f-11cf-88cb-001111000030}rlength:93 
+get whbx device ok
+get whbx device end

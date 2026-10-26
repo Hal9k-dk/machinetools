@@ -1,0 +1,86 @@
+
+Release Notes for XHC MACH3 Ethernet Motion Card
+
+XHC NcEther.dll is the Driver for XHC Ethernet CARD,Used  for MACH3 cnc control system. 
+You could control your cnc machine through our Ethernet card.
+the card has these feature:
+Standard ehternet  Interface
+4/6 Axis Step/Direction Output
+8 General Purpose Outputs 
+16 General Purpose Inputs
+1 PWM Output for Spindle Speed Control
+Up to 2000Khz Steps pulse
+
+Release Notes: 
+2020.7.24 v3.16.5
+solve the cannot reset problem when  the active low input io numbers are  more than 8 
+
+
+2020.5.12 v3.16.4
+support g76 code
+
+2020.5.12 v3.16.3
+optimize the communication
+
+2019.7.17 v3.16.1
+modify whb04bx start/pause function.clear wheel data when reset 
+
+
+
+2019.7.8 v3.16
+add user self define macro key for whb04bx
+2019.1.4 v3.15
+modify the function for whb04b
+
+2018.12.19.v3.14
+ jog move disable when according limitswitch is on
+2018.9.18 v3.13
+support the whb04bx.
+
+2018.6.22 V3.12
+solve probe maybe change other DRO problem
+optimize the second home function
+2018.5.9 V3.11
+optimize the communication ,make it more stable
+2018.1.5 V3.10
+change the communication to asyn
+
+2017.11.24 V3.09
+solve the second home problem
+2017.7.4 V3.08
+optimize the communication with card.
+1. modify the slave axis home function.
+2017.5.5V3.06.1
+1. modify the slave axis home function.
+2017.4.24 V3.06
+1. modity the pwm output with acceleration.
+2017.2.15 V3.05
+1.modify the single home with backward distance.
+
+2017.2.15 V3.03
+solve mach3 g03 command path error when run arc command
+2016.11.31 V3.02
+solve "device io error" problem
+2016.11.31 V3.01
+filter the all input io if all zero
+modify the plugin windows output io test ,result device communication problem and reset.
+
+2016.9.21 V3.0
+release the first version.
+this driver is only used for xhc ehternet card.if you want to use our usb card,we could offer it aslo.
+
+
+
+Contact Details:
+Chengdu XHC Tech., Inc.
+ 
+
+86-028-81705368 - Sales,Fax
+86-028-81701768  - Support
+
+NetWork:
+http://www.cdxhctech.com/
+
+517202913@qq.com Support E-mail
+QQ:517202913        Support QQ
+ 

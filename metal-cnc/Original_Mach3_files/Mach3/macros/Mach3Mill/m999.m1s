@@ -1,0 +1,14 @@
+DoButton(24)
+While IsMoving()
+Wend
+DoButton(23)
+While IsMoving()
+Wend
+DoButton(22)
+While IsMoving()
+Wend
+DoButton(25) 
+While IsMoving()
+Wend
+ 
+
