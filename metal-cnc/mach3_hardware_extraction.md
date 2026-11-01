@@ -10,6 +10,65 @@ Note: all parallel-port (LPT) step/dir/input pin tags in the XML are dead config
 
 ---
 
+## Complete Parameter Table (all values from Mach3Mill.xml)
+
+Mach3 stores velocity values divided by 60 (×60 = dialog value in mm/min). Angles are in degrees for rotary axes.
+
+| Parameter | X | Y | Z | A | B | C | Notes |
+|---|---|---|---|---|---|---|---|
+| Steps per unit (steps/mm or steps/°) | **320** | **320** | **320** | **10** | 88.333 | 88.333 | Motor tuning; verify microstepping |
+| Max velocity (mm/min or °/min) | **2000** | **2000** | **2000** | **1000** | 3000 | 3000 | Stored ÷60 in XML (33.34 / 16.67 / 50) |
+| Max velocity (mm/s or °/s) | 33.34 | 33.34 | 33.34 | 16.67 | 50 | 50 | Raw XML `Vel` value |
+| Acceleration (mm/s² or °/s²) | **400** | **400** | **400** | **400** | 200 | 200 | Motor tuning accel |
+| G0 rapid / seek speed | \multicolumn{6}{c}{**3000 mm/min** (`RapidFeed`)} | Global rapid traverse rate |
+| Home switch enabled | **Yes** | **Yes** | **No** | **No** | — | — | `HomeLmt1=1, HomeLmt2=1, HomeLmt3=0, HomeLmt4=0` |
+| Homing direction | −1 (neg) | −1 (neg) | +1 (stale) | −1 (stale) | — | — | `GHomeWay` tag |
+| Pull-off after homing | **+5.0 mm** | **+5.0 mm** | −5.0 mm (unused) | +10.0 ° | +5.0 | +5.0 | `XPullOff` … `DPullOff` |
+| Ref/homing speed | 40 | 40 | 40 | 20 | 20 | 20 | `RefSpeed0..5` |
+| Back-off (reset/carve-end) | +5 mm | −5 mm | +1 mm | — | — | — | `BackX/BackY/BackZ` |
+| Back-off speed | \multicolumn{6}{c}{20 mm/min (`BackSpeed`)} | |
+| Active (motor channel) | Yes (0) | Yes (1) | Yes (2) | Yes (3) | No (4) | No (5) | `Motor0Active..Motor5Active` |
+| Soft limits | \multicolumn{6}{c}{Disabled (`SoftLmtDis=1`)} | |
+| Home/limit input mask | \multicolumn{6}{c}{65535 — all 16 card inputs enabled (`HomeLimitEn`)} | |
+| Homing mode | \multicolumn{6}{c}{2 = Dual stage (`Homing`)} | |
+
+### Card / controller (global)
+| Parameter | Value | Notes |
+|---|---|---|
+| Device | `NcUsbPod-XHC-Mach3-USB-Motion-Card` | XHC MKS4-V USB motion card |
+| USB inputs / outputs | 16 / 16 | `USBINPUTS=16 / USBOUTPUTS=16` |
+| Pulse speed | 0 (auto) | `PulseSpeed` |
+| Step pulse | up to 2000 kHz | Card capability per plugin release notes |
+| G-code buffer time | 1024 ms | `GBufTime` |
+
+### Spindle
+| Parameter | Value | Notes |
+|---|---|---|
+| PWM enabled | 1 | `PWM=1` |
+| PWM calibration | 16384 (2¹⁴) | `ModSpindleCal` |
+| PWM base | 1000 | `PWMBase` |
+| SpinCW output | #7 (relay) | |
+| SpinCCW output | #8 | |
+| Spin on delay | 2 s | `SpinOnTime` |
+| Spin delay CW/CCW/Down | 1 s | `SpinDelay*` |
+| Pulley ratio | PULLEY=3 | Presets 1000/2000/4000/24000 rpm |
+| VFD / Modbus | None configured | H100 VFD is new FluidNC hardware |
+
+### Probe (M930 Auto Tool Zero)
+| Parameter | Value | Notes |
+|---|---|---|
+| Probe feed | 200 mm/min | `Z-300` mm travel at F200 |
+| Probe travel allowance | 300 mm | Macro moves Z down 300 mm |
+
+### Other
+| Parameter | Value | Notes |
+|---|---|---|
+| Safe Z | 10 mm | `UseSafeZ=1, m_SafeZ=10` |
+| Knee travel (display) | 1300 | `XCLength/YCLength/ZCLength` |
+| Units | Metric | `InchUnit=0` |
+
+---
+
 ## Axes / Motor Tuning (Config → Motor Tuning)
 
 Mach3 velocity values are stored in the XML divided by 60 (×60 = dialog value in mm/min).
@@ -33,6 +92,18 @@ Mach3 velocity values are stored in the XML divided by 60 (×60 = dialog value i
 
 ---
 
+## Seek / Rapid Traverse Speeds (G0)
+
+Mach3 stores the global G0 rapid / seek rate as `RapidFeed`:
+
+| Parameter | XML value | Meaning |
+|---|---|---|
+| `RapidFeed` | **3000** | G0 rapid traverse rate = **3000 mm/min** (metric machine) |
+
+This is distinct from the per-axis max velocity in Motor Tuning (2000 mm/min for X/Y/Z). The rapid rate governs `G0` moves; the motor-tuning max velocity is the hard ceiling each axis can reach. For FluidNC, this maps to each axis's `max_rate_mm_per_min` (use the motor-tuning value of 2000 mm/min as the safe ceiling; the 3000 mm/min rapid is an override Mach3 allowed for G0).
+
+---
+
 ## Homing & Limit Switches
 
 From `<Pod>` (XHC card plugin) and Mach3 homing tags:
@@ -43,13 +114,38 @@ From `<Pod>` (XHC card plugin) and Mach3 homing tags:
 | Y | **Yes** (HomeLmt2=1) | **−1 (negative side)** | **+5.0 mm** | 40 |
 | Z | **No** (HomeLmt3=0) | +1 (stale, homing off) | −5.0 mm (configured but unused) | 40 |
 | A | No (HomeLmt4=0) | −1 (stale) | +10 mm | 20 |
+| B | No | — | +5.0 | 20 |
+| C | No | — | +5.0 | 20 |
+
+### End-stop pull-off distances (detailed)
+
+The XML stores explicit pull-off (back-off after home/limit trigger) distances per axis:
+
+| Axis | Pull-off value | Units | Active? | Source tag |
+|---|---|---|---|---|
+| X | **+5.0000** | mm | Yes | `XPullOff` |
+| Y | **+5.0000** | mm | Yes | `YPullOff` |
+| Z | **−5.0000** | mm | No (no switch) | `ZPullOff` |
+| A | **+10.0000** | ° | No (no switch) | `APullOff` |
+| B | **+5.0000** | — | No | `BPullOff` |
+| C | **+5.0000** | — | No | `CPullOff` |
+| D | **+5.0000** | — | No | `DPullOff` |
+
+Additional back-off values used after reset / carve-end (screenset feature, not homing):
+
+| Axis | Back-off | Units | Source tag |
+|---|---|---|---|
+| X | +5 | mm | `BackX` |
+| Y | −5 | mm | `BackY` |
+| Z | +1 | mm | `BackZ` |
+| Back-off speed | 20 | mm/min | `BackSpeed` |
 
 Card-level switch settings:
 - `HomeLimitEn = 65535` → all 16 input channels enabled for home/limit duty (mask), i.e. "switch input on any channel triggers home/limit".
-- `Homing = 2` (homing stage/mode setting on the card).
+- `Homing = 2` (homing stage/mode setting on the card) — Dual Stage homing.
 - `HomeDec = 1` (deceleration/homing slow-down setting).
 - `SoftLmtDis = 1` → **soft limits disabled on the card** (consistent with `soft_limits: false` in the yaml).
-- `RefSpeed0..2 = 40` (homing/reference feed speed used by Mach3).
+- `RefSpeed0..2 = 40` (homing/reference feed speed used by Mach3 for X/Y/Z); `RefSpeed3..5 = 20` for A/B/C.
 - LastErrors.txt shows limit switches and E-stop were exercised in normal operation ("LimitSwitch Triggered", "ReConfiguration Estop").
 
 **No travel limits / soft-limit ranges are stored anywhere** — soft limits were disabled, and no X/Y/Z max travel values exist in the config. (Minor hint: display/limit-ish XML fields M0Max=300, M1Max=400 exist but semantics of those fields are undocumented — possibly 300/400 mm travel for X/Y; use only as a check against measured travel.)
@@ -115,6 +211,9 @@ Switch polarity/active level is not recorded in the XML (it lives in the card's 
 | axes.z limit_neg_pin | no switch installed | high |
 | probe feed (M930) | 200 mm/min | high |
 | flood/mist | not in use (NoFlood=1) | high |
+| rapid / seek rate (G0) | 3000 mm/min (`RapidFeed`) | high — but use motor-tuning 2000 mm/min as FluidNC max_rate ceiling |
+| homing pull-off X/Y | +5.0 mm (`XPullOff`/`YPullOff`) | high |
+| homing pull-off Z | none (no switch) | high |
 
 ### Not recoverable from Mach3 files (must come from MK100 manual / metering)
 - Physical limit-switch wiring polarity (active high/low) — the card's active-low handling was configured in the plugin UI, and the yaml already assumes `:pu` pull-down/pull-up choices.

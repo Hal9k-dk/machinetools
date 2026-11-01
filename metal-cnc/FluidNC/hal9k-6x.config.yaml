@@ -3,9 +3,9 @@ board: 6x CNC Controller
 kinematics:
   Cartesian: {}
 start:
-  must_home: true
+  must_home: false
   deactivate_parking: false
-  check_limits: true
+  check_limits: false
 stepping:
   engine: I2S_STREAM
   idle_ms: 255
@@ -41,7 +41,7 @@ axes:
         disable_pin: i2so.0:high
       hard_limits: false
       # IO34
-      limit_neg_pin: gpio.34:low:pu
+      limit_neg_pin: gpio.34:low
     homing:
       cycle: 1
       positive_direction: false
@@ -65,7 +65,7 @@ axes:
         disable_pin: i2so.7:high
       hard_limits: false
       # IO39
-      limit_neg_pin: gpio.39:low:pu
+      limit_neg_pin: gpio.39:low
     homing:
       cycle: 1
       positive_direction: false
@@ -114,7 +114,10 @@ axes:
       hard_limits: false
 control:
   # IO35
-  estop_pin: gpio.35:high:pu
+  estop_pin: gpio.35:high
+user_inputs:
+  # IO33
+  digital0_pin: gpio.33
 probe:
   # IO32
   toolsetter_pin: gpio.32:low
