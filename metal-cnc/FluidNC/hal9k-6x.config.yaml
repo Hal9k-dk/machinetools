@@ -3,7 +3,7 @@ board: 6x CNC Controller
 kinematics:
   Cartesian: {}
 start:
-  must_home: false
+  must_home: true
   deactivate_parking: false
   check_limits: false
 stepping:
@@ -31,7 +31,7 @@ axes:
     steps_per_mm: 320
     max_rate_mm_per_min: 2000
     acceleration_mm_per_sec2: 400
-    max_travel_mm: 600
+    max_travel_mm: 400
     soft_limits: true
     # Motor1
     motor0:
@@ -43,11 +43,11 @@ axes:
       # IO34
       limit_neg_pin: gpio.34:low
     homing:
-      cycle: 1
+      cycle: 2
       positive_direction: false
       mpos_mm: 0
-      feed_mm_per_min: 50
-      seek_mm_per_min: 200
+      feed_mm_per_min: 100
+      seek_mm_per_min: 1500
       settle_ms: 250
       seek_scaler: 1.1
       feed_scaler: 1.1
@@ -55,8 +55,8 @@ axes:
     steps_per_mm: 320
     max_rate_mm_per_min: 2000
     acceleration_mm_per_sec2: 400
-    max_travel_mm: 900
-    soft_limits: false
+    max_travel_mm: 585
+    soft_limits: true
     # Motor2
     motor0:
       standard_stepper:
@@ -67,11 +67,11 @@ axes:
       # IO39
       limit_neg_pin: gpio.39:low
     homing:
-      cycle: 1
+      cycle: 2
       positive_direction: false
       mpos_mm: 0
-      feed_mm_per_min: 50
-      seek_mm_per_min: 200
+      feed_mm_per_min: 100
+      seek_mm_per_min: 1500
       settle_ms: 250
       seek_scaler: 1.1
       feed_scaler: 1.1
@@ -91,11 +91,11 @@ axes:
       # IO36
       limit_pos_pin: gpio.36:low
     homing:
-      cycle: 2
+      cycle: 1
       positive_direction: true
       mpos_mm: 0
-      feed_mm_per_min: 50
-      seek_mm_per_min: 200
+      feed_mm_per_min: 100
+      seek_mm_per_min: 1500
       settle_ms: 250
       seek_scaler: 1.1
       feed_scaler: 1.1
@@ -115,9 +115,6 @@ axes:
 control:
   # IO35
   estop_pin: gpio.35:high
-user_inputs:
-  # IO33
-  digital0_pin: gpio.33
 probe:
   # IO32
   toolsetter_pin: gpio.32:low
@@ -126,7 +123,7 @@ probe:
   probe_hard_limit: true
 10V:
   tool_num: 0
-  speed_map: 0=0% 0=30% 6000=30% 20000=100%
+  speed_map: 0=0% 24000=100%
   off_on_alarm: true
   atc: ''
   m6_macro: ''
@@ -135,6 +132,8 @@ probe:
   spinup_ms: 0
   spindown_ms: 0
   pwm_hz: 5000
+  # Spindle Fwd
+  forward_pin: gpio.15
   # 0-10V - 10v gpio.13
   output_pin: gpio.13
 arc_tolerance_mm: 0.002
